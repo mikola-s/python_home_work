@@ -10,7 +10,7 @@ end_number = int(input())
 rezult = ''
 
 if end_number > fizz and end_number > buzz:
-    for counter in range(1, end_number):
+    for counter in range(1, end_number + 1):
         if counter % fizz == 0 and counter % buzz == 0:
             rezult += ' FB'
         elif counter % fizz == 0:
