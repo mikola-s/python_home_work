@@ -3,14 +3,23 @@
 ##англоязычных текстовых строк. Считаем частоту встретившихся
 ##слов в файле, но через функции и map, без единого цикла!
 
-with open('text_for_ex_01_3_practice.txt', 'r') as story:
-    story_list = story.read().split()
+from re import sub
 
-rezult_dict = dict.fromkeys(list(set(story_list)), 0)
+def cleaner(string):
+    return sub(r"[^\w']", "", string)
 
 def counter(item):
     rezult_dict[item] += 1
 
+def printing(item):
+    print(rezult_dict[item], '\t', item)
+    
+
+with open('text_for_ex_01_3_practice.txt', 'r') as story:
+    story_list = list(map(cleaner, story.read().split()))
+
+rezult_dict = dict.fromkeys(list(set(story_list)), 0)
+
 temp = list(map(counter, story_list))
 
-print(rezult_dict)
+temp = list(map(printing, sorted(rezult_dict.keys())))

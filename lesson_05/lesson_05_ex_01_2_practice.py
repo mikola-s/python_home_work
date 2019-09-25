@@ -5,15 +5,17 @@
 
 from random import randint
 
-start_list = [randint(1,100) for num in range(20)]
+start_list = [randint(1, 100) for num in range(20)]
 print(start_list)
+
 
 def simple_square(num):
     for divider in range(2, num):
         if num % divider == 0:
             return num
-    return num*num
-    
+    return num * num
+
+
 print(list(map(simple_square, start_list)))
 
 

@@ -1,7 +1,7 @@
-##Домашнее задение урок 3. Задание 2.
-##Написать fizzbuzz для 20 троек чисел, которые записаны в файл.
-##Читаете из файла первую строку, берете из нее числа,
-##считаете для них fizzbuzz, выводите.
+# Домашнее задение урок 3. Задание 2.
+# Написать fizzbuzz для 20 троек чисел, которые записаны в файл.
+# Читаете из файла первую строку, берете из нее числа,
+# считаете для них fizzbuzz, выводите.
 
 def fizz_buzz(fizz, buzz, end_number):
     rezult = ''
@@ -16,8 +16,9 @@ def fizz_buzz(fizz, buzz, end_number):
             rezult += ' ' + str(counter)
     print('fizz =', fizz, ' buzz =', buzz, ' end number =', end_number)
     print(rezult, '\n')
-    
-with open('./data_file_for_fizz_buzz.txt', 'r') as data_file:
+
+
+with open('./input_data_file_for_fizz_buzz.txt', 'r') as data_file:
     for line in data_file:
         fizz_buzz_list = list(map(int, line.split()))
         fizz_buzz(fizz_buzz_list[0], fizz_buzz_list[1], fizz_buzz_list[2])
