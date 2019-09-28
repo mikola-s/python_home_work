@@ -1,0 +1,3 @@
+[submodule "lesson_10/lesson_10_lvl_01"]
+	path = lesson_10/lesson_10_lvl_01
+	url = git@github.com:mikola-s/lesson_10_lvl_01_simple_form.git
