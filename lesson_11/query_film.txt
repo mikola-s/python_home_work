@@ -1,0 +1,19 @@
+create table films 
+id serial not null primary key,
+title_ru text not null default 'Прибытие поезда на вокзал Ла-Сьота', 
+title_en text not null default 'L’Arrivée d’un train en gare de la Ciotat', 
+released integer not null default 1896)
+;
+
+insert into films(title_ru, title_en, released)
+values
+('Алита: Боевой ангел', 'Alita: Battle Angel', '2019'),
+('Аватар', 'Avatar', '2009'),
+('13 часов: Тайные солдаты Бенгази', '13 Hours: The Secret Soldiers of Benghazi', '2016'),
+('Добро пожаловать в Zомбилэнд', 'Zombieland', '2009'),
+('Матрица', 'Matrix', '1999'),
+('В погоне за Бонни и Клайдом', 'The Highwaymen', '2019'),
+('Оно', 'It', '2017'),
+('Властелин колец: Братство Кольца', 'The Lord of the Rings: The Fellowship of the Ring', '2001'),
+('Аладдин', 'Aladdin', '2019'),
+('Хоббит: Нежданное путешествие', 'The Hobbit: An Unexpected Journey', '2012');
