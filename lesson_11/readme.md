@@ -10,7 +10,12 @@
 CREATE DATABASE movie_info;
 
 \c movie_info
+```
 
+<details>
+	<summary>создание таблицы actors</summary>
+
+```sql
 CREATE TABLE actors (
 	id_actor INT,
 	first_name TEXT,
@@ -27,9 +32,13 @@ CREATE TABLE actors (
  second_name | text    |           |          | 
 Indexes:
     "actors_pkey" PRIMARY KEY, btree (id_actor)
+```
+</details>
 
-========================================================
+<details>
+<summary>создание таблицы producers</summary>
 
+```sql
 CREATE TABLE producers (
 	id_producer INT,
 	first_name TEXT,
@@ -47,9 +56,12 @@ CREATE TABLE producers (
  second_name | text    |           |          | 
 Indexes:
     "producers_pkey" PRIMARY KEY, btree (id_producer)
+```
+</details>
 
-========================================================
-
+<details>
+	<summary>создание таблицы films</summary>
+```sql
 CREATE TABLE films (
 	id_film INT,
 	title_ru TEXT,
@@ -71,11 +83,15 @@ Indexes:
     "films_pkey" PRIMARY KEY, btree (id_film)
 
 ```
+</details>
+
 
 
 #### Второй уровень("Храню данные в табличках..."):
 
 >Удаляем и пересоздаем таблицы, добавляем и редактирем поля в таблицах.
+
+
 
 #### Третий уровень ("Храню данные в табличках правильно и красиво!"):
 
