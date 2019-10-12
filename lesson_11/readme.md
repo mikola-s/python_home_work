@@ -1,7 +1,7 @@
 
 ## Домашнее задание №11
 
-#### Первый уровень ("Храню данные..."):
+### Первый уровень ("Храню данные..."):
 >Повторяем урок, создаем базу данных фильмов с таблицами актеров, фильмов, режиссеров.
 
 создание базы данных
@@ -12,7 +12,7 @@ CREATE DATABASE movie_info;
 \c movie_info
 ```
 
-<details>
+<details open="open">
 	<summary>создание таблицы actors</summary>
 
 ```sql
@@ -23,7 +23,6 @@ CREATE TABLE actors (
 	);
 
 \d actors
-
                                   Table "public.actors"
    Column    |  Type   | Collation | Nullable |                 Default                  
 -------------+---------+-----------+----------+------------------------------------------
@@ -35,8 +34,8 @@ CREATE TABLE actors (
 ```
 </details>
 
-<details>
-<summary>создание таблицы producers</summary>
+<details open="open">
+	<summary>создание таблицы producers</summary>
 
 ```sql
 CREATE TABLE producers (
@@ -46,7 +45,6 @@ CREATE TABLE producers (
 	);
 
 \d producers
-
                                    Table "public.producers"
    Column    |  Type   | Collation | Nullable |                    Default                     
 -------------+---------+-----------+----------+------------------------------------------------
@@ -57,7 +55,7 @@ CREATE TABLE producers (
 ```
 </details>
 
-<details>
+<details open="open">
 	<summary>создание таблицы films</summary>
 
 ```sql
@@ -69,7 +67,6 @@ CREATE TABLE films (
 	);
 
 \d films
-
                                 Table "public.films"
   Column  |  Type   | Collation | Nullable |                Default                 
 ----------+---------+-----------+----------+----------------------------------------
@@ -83,17 +80,17 @@ CREATE TABLE films (
 </details>
 
 
-#### Второй уровень("Храню данные в табличках..."):
+### Второй уровень("Храню данные в табличках..."):
 
 >Удаляем и пересоздаем таблицы, добавляем и редактирем поля в таблицах.
 
-изменеие таблицы actors
+<details open="open">
+	<summary>изменеие таблицы actors</summary> 
 
 ```sql
 ALTER TABLE actors RENAME id TO id_actor;
 
 \d actors
-
                                   Table "public.actors"
    Column    |  Type   | Collation | Nullable |                 Default                  
 -------------+---------+-----------+----------+------------------------------------------
@@ -106,7 +103,6 @@ ALTER TABLE actors RENAME id TO id_actor;
 ALTER TABLE actors ADD PRIMARY KEY(id_actor);
 
 \d actors
-
                                   Table "public.actors"
    Column    |  Type   | Collation | Nullable |                 Default                  
 -------------+---------+-----------+----------+------------------------------------------
@@ -117,6 +113,7 @@ Indexes:
     "actors_pkey" PRIMARY KEY, btree (id_actor)
 
 ```
+</details>
 
 
 <details>
@@ -124,8 +121,7 @@ Indexes:
 
 ```sql
 INSERT INTO actors(first_name, second_name)
-VALUES
-	('Уайатт', 'Олефф'),		('Доминик', 'Монаган'),		('Ричард', 'Армитидж'),
+VALUES	('Уайатт', 'Олефф'),		('Доминик', 'Монаган'),		('Ричард', 'Армитидж'),
 	('Джон', 'Красински'),		('Керри-Энн', 'Мосс'),		('Махершала', 'Али'),
 	('Пабло', 'Шрайбер'),		('Уильям', 'Сэдлер'),		('Билл', 'Скарсгорд'),
 	('Билли', 'Бойд'),			('Николас', 'Хэмилтон'),	('Фредди', 'Строма'),
@@ -147,10 +143,109 @@ VALUES
 	('Кейт', 'Бланшетт'),		('Джесси', 'Айзенберг'),	('Шон', 'Астин'),
 	('Люк', 'Эванс'),			('Джереми Рэй', 'Тейлор')
 ;
+
+SELECT (first_name || ' ' || second_name) AS actor_name FROM actors ORDER BY second_name;
+
+     actor_name     
+--------------------
+ Джесси Айзенберг
+ Махершала Али
+ Ричард Армитидж
+ Шон Астин
+ Шон Бин
+ Кейт Бланшетт
+ Орландо Блум
+ Билли Бойд
+ Эбигейл Бреслин
+ Кэти Бэйтс
+ Кристоф Вальц
+ Элайджа Вуд
+ Финн Вулфхард
+ Джек Дилан Грейзер
+ Чоузен Джейкобс
+ Киан Джонсон
+ Ким Диккенс
+ Джеймс Бэдж Дэйл
+ Дженнифер Коннелли
+ Кевин Костнер
+ Джон Красински
+ Кристофер Ли
+ Эванджелин Лилли
+ София Лиллис
+ Джон Кэрролл Линч
+ Стивен Лэнг
+ Иэн Маккеллен
+ Томас Манн
+ Джейден Мартелл
+ Мена Массуд
+ Доминик Монаган
+ Вигго Мортенсен
+ Керри-Энн Мосс
+ Джоэль Мур
+ Уайатт Олефф
+ Джо Пантолиано
+ Джованни Рибизи
+ Киану Ривз
+ Джон Рис-Дэвис
+ Мишель Родригес
+ Роза Салазар
+ Зои Салдана
+ Энди Серкис
+ Билл Скарсгорд
+ Наоми Скотт
+ Эд Скрейн
+ Уилл Смит
+ Тоби Стивенс
+ Эмма Стоун
+ Фредди Строма
+ Уильям Сэдлер
+ Джереми Рэй Тейлор
+ Сигурни Уивер
+ Хьюго Уивинг
+ Сэм Уортингтон
+ Лоуренс Фишборн
+ Мартин Фримен
+ Вуди Харрельсон
+ Джеки Эрл Хейли
+ Николас Хэмилтон
+ Пабло Шрайбер
+ Люк Эванс
+(62 rows)
+
 ```
 </details>
 
+<details open="open">
+	<summary>изменеие таблицы producer</summary> 
 
-#### Третий уровень ("Храню данные в табличках правильно и красиво!"):
+```sql
+
+ALTER TABLE producers RENAME id TO id_producer;
+
+\d producers
+                                   Table "public.producers"
+   Column    |  Type   | Collation | Nullable |                    Default                     
+-------------+---------+-----------+----------+------------------------------------------------
+ id_producer | integer |           | not null | nextval('producers_id_producer_seq'::regclass)
+ first_name  | text    |           |          | 
+ second_name | text    |           |          | 
+
+
+ALTER TABLE producers ADD PRIMARY KEY(id_producer);
+
+\d producers
+                                   Table "public.producers"
+   Column    |  Type   | Collation | Nullable |                    Default                     
+-------------+---------+-----------+----------+------------------------------------------------
+ id_producer | integer |           | not null | nextval('producers_id_producer_seq'::regclass)
+ first_name  | text    |           |          | 
+ second_name | text    |           |          | 
+Indexes:
+    "producers_pkey" PRIMARY KEY, btree (id_producer)
+
+```
+
+
+### Третий уровень ("Храню данные в табличках правильно и красиво!"):
 
 >Создаем дамп базы данных и скидываем ссылку на выложенный в git дамп. Как создавать дамп - google that question.
