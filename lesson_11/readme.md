@@ -6,7 +6,7 @@
 
 создание базы данных
 
-```psql
+```sql
 CREATE DATABASE movie_info;
 
 \c movie_info
