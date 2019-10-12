@@ -39,19 +39,19 @@ SET default_with_oids = false;
 --
 
 CREATE TABLE public.actors (
-    id integer NOT NULL,
-    first_name text DEFAULT 'John'::text NOT NULL,
-    surname text DEFAULT 'Do'::text NOT NULL
+    id_actor integer NOT NULL,
+    first_name text,
+    second_name text
 );
 
 
 ALTER TABLE public.actors OWNER TO "mikola-s";
 
 --
--- Name: actors_id_seq; Type: SEQUENCE; Schema: public; Owner: mikola-s
+-- Name: actors_id_actor_seq; Type: SEQUENCE; Schema: public; Owner: mikola-s
 --
 
-CREATE SEQUENCE public.actors_id_seq
+CREATE SEQUENCE public.actors_id_actor_seq
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -60,13 +60,13 @@ CREATE SEQUENCE public.actors_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.actors_id_seq OWNER TO "mikola-s";
+ALTER TABLE public.actors_id_actor_seq OWNER TO "mikola-s";
 
 --
--- Name: actors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mikola-s
+-- Name: actors_id_actor_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mikola-s
 --
 
-ALTER SEQUENCE public.actors_id_seq OWNED BY public.actors.id;
+ALTER SEQUENCE public.actors_id_actor_seq OWNED BY public.actors.id_actor;
 
 
 --
@@ -74,20 +74,20 @@ ALTER SEQUENCE public.actors_id_seq OWNED BY public.actors.id;
 --
 
 CREATE TABLE public.films (
-    id integer NOT NULL,
-    title_ru text DEFAULT 'Прибытие поезда на вокзал Ла-Сьота'::text NOT NULL,
-    title_en text DEFAULT 'L’Arrivée d’un train en gare de la Ciotat'::text NOT NULL,
-    released integer DEFAULT 1896 NOT NULL
+    id_film integer NOT NULL,
+    title_ru text,
+    title_en text,
+    release integer
 );
 
 
 ALTER TABLE public.films OWNER TO "mikola-s";
 
 --
--- Name: films_id_seq; Type: SEQUENCE; Schema: public; Owner: mikola-s
+-- Name: films_id_film_seq; Type: SEQUENCE; Schema: public; Owner: mikola-s
 --
 
-CREATE SEQUENCE public.films_id_seq
+CREATE SEQUENCE public.films_id_film_seq
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -96,13 +96,13 @@ CREATE SEQUENCE public.films_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.films_id_seq OWNER TO "mikola-s";
+ALTER TABLE public.films_id_film_seq OWNER TO "mikola-s";
 
 --
--- Name: films_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mikola-s
+-- Name: films_id_film_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mikola-s
 --
 
-ALTER SEQUENCE public.films_id_seq OWNED BY public.films.id;
+ALTER SEQUENCE public.films_id_film_seq OWNED BY public.films.id_film;
 
 
 --
@@ -110,19 +110,19 @@ ALTER SEQUENCE public.films_id_seq OWNED BY public.films.id;
 --
 
 CREATE TABLE public.producers (
-    id integer NOT NULL,
-    producer_first_name text,
-    producer_sername text
+    id_producer integer NOT NULL,
+    first_name text,
+    second_name text
 );
 
 
 ALTER TABLE public.producers OWNER TO "mikola-s";
 
 --
--- Name: producers_id_seq; Type: SEQUENCE; Schema: public; Owner: mikola-s
+-- Name: producers_id_producer_seq; Type: SEQUENCE; Schema: public; Owner: mikola-s
 --
 
-CREATE SEQUENCE public.producers_id_seq
+CREATE SEQUENCE public.producers_id_producer_seq
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -131,41 +131,41 @@ CREATE SEQUENCE public.producers_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.producers_id_seq OWNER TO "mikola-s";
+ALTER TABLE public.producers_id_producer_seq OWNER TO "mikola-s";
 
 --
--- Name: producers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mikola-s
+-- Name: producers_id_producer_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mikola-s
 --
 
-ALTER SEQUENCE public.producers_id_seq OWNED BY public.producers.id;
-
-
---
--- Name: actors id; Type: DEFAULT; Schema: public; Owner: mikola-s
---
-
-ALTER TABLE ONLY public.actors ALTER COLUMN id SET DEFAULT nextval('public.actors_id_seq'::regclass);
+ALTER SEQUENCE public.producers_id_producer_seq OWNED BY public.producers.id_producer;
 
 
 --
--- Name: films id; Type: DEFAULT; Schema: public; Owner: mikola-s
+-- Name: actors id_actor; Type: DEFAULT; Schema: public; Owner: mikola-s
 --
 
-ALTER TABLE ONLY public.films ALTER COLUMN id SET DEFAULT nextval('public.films_id_seq'::regclass);
+ALTER TABLE ONLY public.actors ALTER COLUMN id_actor SET DEFAULT nextval('public.actors_id_actor_seq'::regclass);
 
 
 --
--- Name: producers id; Type: DEFAULT; Schema: public; Owner: mikola-s
+-- Name: films id_film; Type: DEFAULT; Schema: public; Owner: mikola-s
 --
 
-ALTER TABLE ONLY public.producers ALTER COLUMN id SET DEFAULT nextval('public.producers_id_seq'::regclass);
+ALTER TABLE ONLY public.films ALTER COLUMN id_film SET DEFAULT nextval('public.films_id_film_seq'::regclass);
+
+
+--
+-- Name: producers id_producer; Type: DEFAULT; Schema: public; Owner: mikola-s
+--
+
+ALTER TABLE ONLY public.producers ALTER COLUMN id_producer SET DEFAULT nextval('public.producers_id_producer_seq'::regclass);
 
 
 --
 -- Data for Name: actors; Type: TABLE DATA; Schema: public; Owner: mikola-s
 --
 
-COPY public.actors (id, first_name, surname) FROM stdin;
+COPY public.actors (id_actor, first_name, second_name) FROM stdin;
 1	Уайатт	Олефф
 2	Доминик	Монаган
 3	Ричард	Армитидж
@@ -235,7 +235,7 @@ COPY public.actors (id, first_name, surname) FROM stdin;
 -- Data for Name: films; Type: TABLE DATA; Schema: public; Owner: mikola-s
 --
 
-COPY public.films (id, title_ru, title_en, released) FROM stdin;
+COPY public.films (id_film, title_ru, title_en, release) FROM stdin;
 1	Алита: Боевой ангел	Alita: Battle Angel	2019
 2	Аватар	Avatar	2009
 3	13 часов: Тайные солдаты Бенгази	13 Hours: The Secret Soldiers of Benghazi	2016
@@ -253,7 +253,7 @@ COPY public.films (id, title_ru, title_en, released) FROM stdin;
 -- Data for Name: producers; Type: TABLE DATA; Schema: public; Owner: mikola-s
 --
 
-COPY public.producers (id, producer_first_name, producer_sername) FROM stdin;
+COPY public.producers (id_producer, first_name, second_name) FROM stdin;
 1	Роберт	Родригес
 2	Джеймс	Кэмерон
 3	Майкл	Бэй
@@ -267,24 +267,24 @@ COPY public.producers (id, producer_first_name, producer_sername) FROM stdin;
 
 
 --
--- Name: actors_id_seq; Type: SEQUENCE SET; Schema: public; Owner: mikola-s
+-- Name: actors_id_actor_seq; Type: SEQUENCE SET; Schema: public; Owner: mikola-s
 --
 
-SELECT pg_catalog.setval('public.actors_id_seq', 62, true);
-
-
---
--- Name: films_id_seq; Type: SEQUENCE SET; Schema: public; Owner: mikola-s
---
-
-SELECT pg_catalog.setval('public.films_id_seq', 10, true);
+SELECT pg_catalog.setval('public.actors_id_actor_seq', 62, true);
 
 
 --
--- Name: producers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: mikola-s
+-- Name: films_id_film_seq; Type: SEQUENCE SET; Schema: public; Owner: mikola-s
 --
 
-SELECT pg_catalog.setval('public.producers_id_seq', 9, true);
+SELECT pg_catalog.setval('public.films_id_film_seq', 10, true);
+
+
+--
+-- Name: producers_id_producer_seq; Type: SEQUENCE SET; Schema: public; Owner: mikola-s
+--
+
+SELECT pg_catalog.setval('public.producers_id_producer_seq', 9, true);
 
 
 --
@@ -292,7 +292,7 @@ SELECT pg_catalog.setval('public.producers_id_seq', 9, true);
 --
 
 ALTER TABLE ONLY public.actors
-    ADD CONSTRAINT actors_pkey PRIMARY KEY (id);
+    ADD CONSTRAINT actors_pkey PRIMARY KEY (id_actor);
 
 
 --
@@ -300,7 +300,15 @@ ALTER TABLE ONLY public.actors
 --
 
 ALTER TABLE ONLY public.films
-    ADD CONSTRAINT films_pkey PRIMARY KEY (id);
+    ADD CONSTRAINT films_pkey PRIMARY KEY (id_film);
+
+
+--
+-- Name: producers producers_pkey; Type: CONSTRAINT; Schema: public; Owner: mikola-s
+--
+
+ALTER TABLE ONLY public.producers
+    ADD CONSTRAINT producers_pkey PRIMARY KEY (id_producer);
 
 
 --
