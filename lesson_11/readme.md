@@ -116,7 +116,7 @@ Indexes:
 </details>
 
 
-<details>
+<details open="open">
 	<summary>заполнение таблицы actors (закрытый спойлер)</summary>
 
 ```sql
