@@ -1,12 +1,12 @@
 ## Домашнее задание №13
 
-###1. Практикуем все, пройденное на уроке.
+### 1. Практикуем все, пройденное на уроке.
 
 
-####CRUD data -- CREATE
+#### CRUD data -- CREATE
 
 
-#####create table and database
+##### create table and database
 
 ```sql
 
@@ -27,7 +27,7 @@ serial_num  | text    |           | not null |
 ```
 
 
-#####insert data in table
+##### insert data in table
 
 ```sql
 
@@ -65,7 +65,7 @@ VALUES
 
 ```
 
-#####insert from select
+##### insert from select
 
 ```sql
 
@@ -143,9 +143,9 @@ SELECT * FROM squad_weapons;
 ```
 
 
-####CRUD data -- READ
+#### CRUD data -- READ
 
-#####SELECT
+##### SELECT
 
 ```sql
 
@@ -164,7 +164,7 @@ SELECT * FROM squad_weapons WHERE weapon_name = 'AK-74';
 (8 rows)
 ```
 
-#####GROUP BY
+##### GROUP BY
 
 ```sql
 
@@ -184,10 +184,10 @@ SELECT count(*), weapon_name FROM squad_weapons GROUP BY weapon_name;
 ```
 
 
-###2. Изучаем UPDATE и DELETE для данных самостоятельно (ключевые слова соответствуют))
+### 2. Изучаем UPDATE и DELETE для данных самостоятельно (ключевые слова соответствуют))
 
 
-####CRUD data -- UPDATE
+#### CRUD data -- UPDATE
 
 
 
@@ -241,7 +241,7 @@ SELECT * FROM squad_weapons;
 
 ```
 
-####CRUD data -- DELETE
+#### CRUD data -- DELETE
 
 
 ```sql 
@@ -313,17 +313,18 @@ LINE 1: select * from squad_weapons;
 ```
 
 
-###3. Дополнительно знакомимся с FETCH (аналог LIMIT) и TRUNCATE (аналог DROP TABLE + CREATE TABLE)
+### 3. Дополнительно знакомимся с FETCH (аналог LIMIT) и TRUNCATE (аналог DROP TABLE + CREATE TABLE)
 
 
-####Fetch
+#### Fetch
+
 ссылка на источник по [Fetch](https://postgrespro.ru/docs/postgrespro/10/sql-update)
 
 
-####Truncate
+#### Truncate
 ссылка на источник по [Truncate](https://postgrespro.ru/docs/postgrespro/10/sql-update)
 
 
-####Результаты наработок, как обычно, дампом заливаем на github или gitlab так, чтобы я легко нашел их по номеру урока.
+#### Результаты наработок, как обычно, дампом заливаем на github или gitlab так, чтобы я легко нашел их по номеру урока.
 
 [результаты наработок \)\)]()
