@@ -2,7 +2,9 @@
 
 ###1. Практикуем все, пройденное на уроке.
 
-#### CRUD data -- CREATE
+
+####CRUD data -- CREATE
+
 
 #####create table and database
 
@@ -63,7 +65,7 @@ VALUES
 
 ```
 
-##### insert from select
+#####insert from select
 
 ```sql
 
@@ -184,6 +186,7 @@ SELECT count(*), weapon_name FROM squad_weapons GROUP BY weapon_name;
 
 ###2. Изучаем UPDATE и DELETE для данных самостоятельно (ключевые слова соответствуют))
 
+
 ####CRUD data -- UPDATE
 
 
@@ -239,6 +242,7 @@ SELECT * FROM squad_weapons;
 ```
 
 ####CRUD data -- DELETE
+
 
 ```sql 
 
@@ -310,11 +314,15 @@ LINE 1: select * from squad_weapons;
 
 
 ###3. Дополнительно знакомимся с FETCH (аналог LIMIT) и TRUNCATE (аналог DROP TABLE + CREATE TABLE)
+
+
 ####Fetch
 ссылка на источник по [Fetch](https://postgrespro.ru/docs/postgrespro/10/sql-update)
 
+
 ####Truncate
 ссылка на источник по [Truncate](https://postgrespro.ru/docs/postgrespro/10/sql-update)
+
 
 ####Результаты наработок, как обычно, дампом заливаем на github или gitlab так, чтобы я легко нашел их по номеру урока.
 
