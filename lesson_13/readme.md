@@ -352,7 +352,7 @@ LINE 1: SELECT * FROM squad_weapons;
                       ^
 
 ```
-
+</details>
 
 ### 3. Дополнительно знакомимся с FETCH (аналог LIMIT) и TRUNCATE (аналог DROP TABLE + CREATE TABLE)
 
