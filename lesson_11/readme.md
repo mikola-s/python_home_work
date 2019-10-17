@@ -117,7 +117,7 @@ Indexes:
 
 
 <details open="open">
-	<summary>заполнение таблицы actors (закрытый спойлер)</summary>
+	<summary>заполнение таблицы actors</summary>
 
 ```sql
 INSERT INTO actors(first_name, second_name)
