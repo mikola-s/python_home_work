@@ -6,7 +6,7 @@
 #### CRUD data -- CREATE
 
 
-##### create table and database
+##### создание базы данных и таблицы
 
 ```sql
 
@@ -27,7 +27,7 @@ serial_num  | text    |           | not null |
 ```
 
 
-##### insert data in table
+##### запись дашнных в таблицу (insert)
 
 ```sql
 
@@ -65,7 +65,7 @@ VALUES
 
 ```
 
-##### insert from select
+##### запись данных с помощью select
 
 ```sql
 
@@ -106,6 +106,8 @@ SELECT * FROM squad_weapons;
 
 ```
 
+##### добавление колонки в таблицу
+
 ```sql
 
 ALTER TABLE squad_weapons ADD COLUMN ammo TEXT DEFAULT '';
@@ -145,7 +147,7 @@ SELECT * FROM squad_weapons;
 
 #### CRUD data -- READ
 
-##### SELECT
+##### чтение данных (SELECT)
 
 ```sql
 
@@ -164,7 +166,7 @@ SELECT * FROM squad_weapons WHERE weapon_name = 'AK-74';
 (8 rows)
 ```
 
-##### GROUP BY
+##### чтение данных (+ GROUP BY)
 
 ```sql
 
@@ -189,7 +191,7 @@ SELECT count(*), weapon_name FROM squad_weapons GROUP BY weapon_name;
 
 #### CRUD data -- UPDATE
 
-
+##### заполнение колонки данными
 
 ```sql
 
@@ -244,6 +246,9 @@ SELECT * FROM squad_weapons;
 #### CRUD data -- DELETE
 
 
+##### удаление строк
+
+
 ```sql 
 
 pg_dump squad > squad.sql
@@ -271,6 +276,8 @@ SELECT * FROM squad_weapons;
 
 ```
 
+##### удаление поля (колонки)
+
 ```sql
 
 ALTER TABLE squad_weapons DROP COLUMN ammo;
@@ -294,6 +301,8 @@ ALTER TABLE squad_weapons DROP COLUMN ammo;
 
 ```
 
+##### удаление данных из таблицы
+
 ```sql
 
 TRUNCATE TABLE squad_weapons;
@@ -303,9 +312,16 @@ select * from squad_weapons;
 -----------+-------------+------------
 (0 rows)
 
+```
+
+##### удаление таблицы из базы данных
+
+```sql
+
 DROP TABLE squad_weapons;
 
 select * from squad_weapons;
+
 ERROR:  relation "squad_weapons" does not exist
 LINE 1: select * from squad_weapons;
                       ^
