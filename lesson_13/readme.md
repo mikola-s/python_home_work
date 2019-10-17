@@ -450,6 +450,8 @@ SELECT * FROM squad_weapons;
 
 ```
 
+</details>
+
 ссылка на источник по [TRUNCATE](https://postgrespro.ru/docs/postgrespro/10/sql-truncate)
 
 
