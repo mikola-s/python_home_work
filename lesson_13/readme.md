@@ -5,8 +5,12 @@
 
 #### CRUD data -- CREATE
 
+<details>
+    <summary>
+        создание базы данных и таблицы
+    </summary>
 
-##### создание базы данных и таблицы
+
 
 ```sql
 
@@ -25,9 +29,12 @@ serial_num  | text    |           | not null |
 
 
 ```
+</details>
 
-
-##### запись дашнных в таблицу (insert)
+<details>
+    <summary>
+        запись дашнных в таблицу (insert)
+    </summary>
 
 ```sql
 
@@ -65,7 +72,12 @@ VALUES
 
 ```
 
-##### запись данных с помощью select
+</details>
+
+<details>
+    <summary>
+        запись данных с помощью SELECT
+    </summary>
 
 ```sql
 
@@ -106,7 +118,12 @@ SELECT * FROM squad_weapons;
 
 ```
 
-##### добавление колонки в таблицу
+</details>
+
+<details>
+    <summary>
+        добавление колонки в таблицу
+    </summary>
 
 ```sql
 
@@ -143,11 +160,14 @@ SELECT * FROM squad_weapons;
 (24 rows)
 
 ```
-
+</details>
 
 #### CRUD data -- READ
 
-##### чтение данных (SELECT)
+<details>
+    <summary>
+        чтение данных (SELECT)
+    </summary>
 
 ```sql
 
@@ -166,7 +186,12 @@ SELECT * FROM squad_weapons WHERE weapon_name = 'AK-74';
 (8 rows)
 ```
 
-##### чтение данных (+ GROUP BY)
+</details>
+
+<details>
+    <summary>
+        чтение данных (+ GROUP BY)
+    </summary>
 
 ```sql
 
@@ -184,14 +209,17 @@ SELECT count(*), weapon_name FROM squad_weapons GROUP BY weapon_name;
 (7 rows)
 
 ```
+</details>
 
 
 ### 2. Изучаем UPDATE и DELETE для данных самостоятельно (ключевые слова соответствуют))
 
-
 #### CRUD data -- UPDATE
 
-##### заполнение колонки данными
+<details>
+    <summary>
+        заполнение колонки данными
+    </summary>
 
 ```sql
 
@@ -242,12 +270,14 @@ SELECT * FROM squad_weapons;
 
 
 ```
+</details>
 
 #### CRUD data -- DELETE
 
-
-##### удаление строк
-
+<details>
+    <summary>
+        удаление строк
+    </summary>
 
 ```sql 
 
@@ -275,8 +305,12 @@ SELECT * FROM squad_weapons;
 
 
 ```
+</details>
 
-##### удаление поля (колонки)
+<details>
+    <summary>
+        удаление поля (колонки)
+    </summary>
 
 ```sql
 
@@ -300,30 +334,21 @@ ALTER TABLE squad_weapons DROP COLUMN ammo;
 
 
 ```
+</details>
 
-##### удаление данных из таблицы
-
-```sql
-
-TRUNCATE TABLE squad_weapons;
-
-select * from squad_weapons;
- weapon_id | weapon_name | serial_num 
------------+-------------+------------
-(0 rows)
-
-```
-
-##### удаление таблицы из базы данных
+<details>
+    <summary>
+        удаление таблицы из базы данных
+    </summary>
 
 ```sql
 
 DROP TABLE squad_weapons;
 
-select * from squad_weapons;
+SELECT * FROM squad_weapons;
 
 ERROR:  relation "squad_weapons" does not exist
-LINE 1: select * from squad_weapons;
+LINE 1: SELECT * FROM squad_weapons;
                       ^
 
 ```
@@ -332,15 +357,102 @@ LINE 1: select * from squad_weapons;
 ### 3. Дополнительно знакомимся с FETCH (аналог LIMIT) и TRUNCATE (аналог DROP TABLE + CREATE TABLE)
 
 
-#### Fetch
+#### FETCH
 
-ссылка на источник по [Fetch](https://postgrespro.ru/docs/postgrespro/10/sql-update)
+<details>
+    <summary>восстановление таблицы squad_weapons </summary>
+
+```sql 
+
+psql squad < squad.sql
+
+SELECT * FROM squad_weapons ORDER BY weapon_id;
+
+ weapon_id | weapon_name | serial_num |           ammo            
+-----------+-------------+------------+---------------------------
+         1 | AK-74       | 249896     | 5,45x39 mm
+         2 | RPG-7       | 2381906    | overcaliber grenade 40 mm
+         3 | AK-74       | 123498     | 5,45x39 mm
+         4 | PKM         | BN-301     | 7,62x54 mm
+         5 | AK-74       | 879832     | 5,45x39 mm
+         6 | GP-25       | 32978      | 40 mm grenade VOG-25
+         7 | AK-74       | 355278     | 5,45x39 mm
+         8 | GP-25       | 23344      | 40 mm grenade VOG-25
+         9 | AKS-74U     | 5761278    | 5,45x39 mm
+        10 | AKS-74U     | 1235561    | 5,45x39 mm
+        11 | SVD         | 232132     | 7,62x54 mm
+        12 | PM          | 1234456    | 9x18 mm PM
+        26 | AK-74       | 812208     | 5,45x39 mm
+        27 | RPG-7       | 820134     | overcaliber grenade 40 mm
+        28 | AK-74       | 448275     | 5,45x39 mm
+        29 | PKM         | 971221     | 7,62x54 mm
+        30 | AK-74       | 968629     | 5,45x39 mm
+        31 | GP-25       | 405628     | 40 mm grenade VOG-25
+        32 | AK-74       | 17736      | 5,45x39 mm
+        33 | GP-25       | 765760     | 40 mm grenade VOG-25
+        34 | AKS-74U     | 362891     | 5,45x39 mm
+        35 | AKS-74U     | 316008     | 5,45x39 mm
+        36 | SVD         | 176676     | 7,62x54 mm
+        37 | PM          | 359044     | 9x18 mm PM
+(24 rows)
+
+```
+</details>
+
+<details>
+    <summary>
+        применение FETCH
+    </summary>
 
 
-#### Truncate
-ссылка на источник по [Truncate](https://postgrespro.ru/docs/postgrespro/10/sql-update)
+```sql
+
+SELECT * FROM squad_weapons ORDER BY weapon_id FETCH NEXT 5 ROW ONLY;
+
+ weapon_id | weapon_name | serial_num |           ammo            
+-----------+-------------+------------+---------------------------
+         1 | AK-74       | 249896     | 5,45x39 mm
+         2 | RPG-7       | 2381906    | overcaliber grenade 40 mm
+         3 | AK-74       | 123498     | 5,45x39 mm
+         4 | PKM         | BN-301     | 7,62x54 mm
+         5 | AK-74       | 879832     | 5,45x39 mm
+(5 rows)
+
+```
+</details>
 
 
-#### Результаты наработок, как обычно, дампом заливаем на github или gitlab так, чтобы я легко нашел их по номеру урока.
+ссылка на источник по [FETCH](https://postgrespro.ru/docs/postgresql/10/sql-select#SQL-LIMIT)
 
-[результаты наработок \)\)]()
+в источнике сказано что для FETCH 
+
+> Слова ROW и ROWS, а также FIRST и NEXT являются незначащими и не влияют на поведение этих предложений.
+
+но без них запрос не работает, поэтому LIMIT удобнее.
+
+
+#### Truncate удаление данных (очистка) из таблицы
+
+
+<details>
+    <summary>
+        применение TRUNCATE
+    </summary>
+
+```sql
+
+TRUNCATE TABLE squad_weapons;
+
+SELECT * FROM squad_weapons;
+ weapon_id | weapon_name | serial_num 
+-----------+-------------+------------
+(0 rows)
+
+```
+
+ссылка на источник по [TRUNCATE](https://postgrespro.ru/docs/postgrespro/10/sql-truncate)
+
+
+### Результаты наработок, как обычно, дампом заливаем на github или gitlab так, чтобы я легко нашел их по номеру урока.
+
+[результаты наработок \)\)](https://github.com/mikola-s/python_home_work/tree/master/lesson_13)
