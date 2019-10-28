@@ -2681,7 +2681,9 @@ Configuration:
 </details>
 
 <details open="open">
-	<summary> **Результат:** </summary>
+	<summary>
+		<b>Результат:**</b> 
+	</summary>
 
 ```bash
 
@@ -2708,5 +2710,1116 @@ Configuration:
 ```
 </details>
 
+#### make
+
+<details>
+	<summary>make</summary>
+
+```bash
+
+mikola-s@mikolas-VirtualBox:~/Downloads/mc-4.8.23$ make
+make  all-recursive
+make[1]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23'
+Making all in intl
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/intl'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/intl'
+Making all in po
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/po'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/po'
+Making all in lib
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib'
+Making all in event
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/event'
+  CC       event.lo
+  CC       manage.lo
+  CC       raise.lo
+  CCLD     libmcevent.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/event'
+Making all in filehighlight
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/filehighlight'
+  CC       common.lo
+  CC       get-color.lo
+  CC       ini-file-read.lo
+  CCLD     libmcfilehighlight.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/filehighlight'
+Making all in mcconfig
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/mcconfig'
+  CC       common.lo
+  CC       get.lo
+  CC       set.lo
+  CC       paths.lo
+  CCLD     libmcconfig.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/mcconfig'
+Making all in search
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/search'
+  CC       search.lo
+  CC       lib.lo
+  CC       normal.lo
+  CC       regex.lo
+  CC       glob.lo
+  CC       hex.lo
+  CCLD     libsearch.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/search'
+Making all in skin
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/skin'
+  CC       colors.lo
+  CC       colors-old.lo
+  CC       common.lo
+  CC       hc-skins.lo
+  CC       ini-file.lo
+  CC       lines.lo
+  CCLD     libmcskin.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/skin'
+Making all in tty
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/tty'
+  CC       color-internal.lo
+  CC       color.lo
+  CC       key.lo
+  CC       keyxdef.lo
+  CC       mouse.lo
+  CC       tty.lo
+  CC       win.lo
+  CC       x11conn.lo
+  CC       color-slang.lo
+  CC       tty-slang.lo
+  CCLD     libmctty.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/tty'
+Making all in vfs
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/vfs'
+  CC       direntry.lo
+  CC       gc.lo
+  CC       interface.lo
+  CC       parse_ls_vga.lo
+  CC       path.lo
+  CC       vfs.lo
+  CC       utilvfs.lo
+  CC       netutil.lo
+  CCLD     libmcvfs.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/vfs'
+Making all in strutil
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/strutil'
+  CC       filevercmp.lo
+  CC       replace.lo
+  CC       strescape.lo
+  CC       strutil8bit.lo
+  CC       strutilascii.lo
+  CC       strutil.lo
+  CC       strutilutf8.lo
+  CC       strverscmp.lo
+  CC       xstrtol.lo
+  CCLD     libmcstrutil.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/strutil'
+Making all in widget
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/widget'
+  CC       button.lo
+  CC       buttonbar.lo
+  CC       check.lo
+  CC       dialog.lo
+  CC       dialog-switch.lo
+  CC       gauge.lo
+  CC       groupbox.lo
+  CC       hline.lo
+  CC       history.lo
+  CC       input.lo
+  CC       input_complete.lo
+  CC       listbox-window.lo
+  CC       listbox.lo
+  CC       label.lo
+  CC       menu.lo
+  CC       mouse.lo
+  CC       quick.lo
+  CC       radio.lo
+  CC       widget-common.lo
+  CC       wtools.lo
+  CCLD     libmcwidget.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/widget'
+Making all in .
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib'
+  CC       utilunix.lo
+  CC       util.lo
+  CC       hook.lo
+  CC       glibcompat.lo
+  CC       global.lo
+  CC       keybind.lo
+  CC       lock.lo
+  CC       serialize.lo
+  CC       shell.lo
+  CC       timefmt.lo
+  CC       timer.lo
+  CC       charsets.lo
+  CCLD     libmc.la
+copying selected object files to avoid basename conflicts...
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib'
+Making all in src
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+Making all in filemanager
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/filemanager'
+  CC       achown.lo
+  CC       boxes.lo
+  CC       chmod.lo
+  CC       chown.lo
+  CC       cmd.lo
+  CC       command.lo
+  CC       dir.lo
+  CC       ext.lo
+  CC       file.lo
+  CC       filegui.lo
+  CC       filenot.lo
+  CC       fileopctx.lo
+  CC       find.lo
+  CC       hotlist.lo
+  CC       info.lo
+  CC       layout.lo
+  CC       midnight.lo
+  CC       mountlist.lo
+  CC       panelize.lo
+  CC       panel.lo
+  CC       tree.lo
+  CC       treestore.lo
+  CCLD     libmcfilemanager.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/filemanager'
+Making all in man2hlp
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/man2hlp'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/man2hlp'
+Making all in vfs
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs'
+Making all in local
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/local'
+  CC       local.lo
+  CCLD     libvfs-local.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/local'
+Making all in cpio
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/cpio'
+  CC       cpio.lo
+  CCLD     libvfs-cpio.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/cpio'
+Making all in extfs
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs'
+Making all in helpers
+make[5]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs/helpers'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs/helpers'
+make[5]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs'
+  CC       extfs.lo
+  CCLD     libvfs-extfs.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[5]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs'
+Making all in fish
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish'
+Making all in helpers
+make[5]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish/helpers'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish/helpers'
+make[5]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish'
+  CC       fish.lo
+  CCLD     libvfs-fish.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[5]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish'
+Making all in ftpfs
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/ftpfs'
+  CC       ftpfs.lo
+  CCLD     libvfs-ftpfs.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/ftpfs'
+Making all in sfs
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/sfs'
+  CC       sfs.lo
+  CCLD     libvfs-sfs.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/sfs'
+Making all in tar
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/tar'
+  CC       tar.lo
+  CCLD     libvfs-tar.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/tar'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs'
+  CC       plugins_init.lo
+  CCLD     libmc-vfs.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs'
+Making all in viewer
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/viewer'
+  CC       actions_cmd.lo
+  CC       ascii.lo
+  CC       coord_cache.lo
+  CC       datasource.lo
+  CC       dialogs.lo
+  CC       display.lo
+  CC       growbuf.lo
+  CC       hex.lo
+  CC       lib.lo
+  CC       mcviewer.lo
+  CC       move.lo
+  CC       nroff.lo
+  CC       search.lo
+  CCLD     libmcviewer.la
+copying selected object files to avoid basename conflicts...
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/viewer'
+Making all in editor
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/editor'
+  CC       bookmark.lo
+  CC       choosesyntax.lo
+  CC       edit.lo
+  CC       editbuffer.lo
+  CC       editcmd.lo
+  CC       editcmd_dialogs.lo
+  CC       editdraw.lo
+  CC       editmenu.lo
+  CC       editoptions.lo
+  CC       editwidget.lo
+  CC       etags.lo
+  CC       format.lo
+  CC       syntax.lo
+  CCLD     libedit.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/editor'
+Making all in diffviewer
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/diffviewer'
+  CC       search.lo
+  CC       ydiff.lo
+  CCLD     libdiffviewer.la
+copying selected object files to avoid basename conflicts...
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/diffviewer'
+Making all in subshell
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/subshell'
+  CC       common.lo
+  CC       proxyfunc.lo
+  CCLD     libsubshell.la
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/subshell'
+Making all in consaver
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/consaver'
+  CC       cons.saver.o
+  CCLD     cons.saver
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/consaver'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+  CC       main.o
+  CC       cons.handler.lo
+  CC       args.lo
+  CC       clipboard.lo
+  CC       events_init.lo
+  CC       execute.lo
+  CC       help.lo
+  CC       keybind-defaults.lo
+  CC       learn.lo
+  CC       setup.lo
+  CC       textconf.lo
+  CC       usermenu.lo
+  CC       util.lo
+  CC       selcodepage.lo
+  CC       background.lo
+  CCLD     libinternal.la
+copying selected object files to avoid basename conflicts...
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CCLD     mc
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+Making all in doc
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc'
+Making all in hints
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints'
+Making all in l10n
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints/l10n'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints/l10n'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints'
+Making all in man
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man'
+Making all in es
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/es'
+MAN_FILE=mc.1.in; MAN_DATE=$(LC_ALL=es_ES.UTF-8 /usr/bin/perl -MPOSIX -e ' @fi=lstat("'${MAN_FILE}'"); print POSIX::strftime("%B de %Y", localtime($fi[9]));' 2>/dev/null); \
+sed -e "s/%DATE_OF_MAN_PAGE%/${MAN_DATE}/g" -e "s/%DISTR_VERSION%/4.8.23/g" -e "s{%prefix%{/usr/local{g" -e "s{%sysconfdir%{/usr/local/etc{g" -e "s{%libexecdir%{/usr/local/libexec{g" mc.1.in > mc.1
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/es'
+Making all in hu
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/hu'
+MAN_FILE=mc.1.in; MAN_DATE=$(LC_ALL=hu_HU.UTF-8 /usr/bin/perl -MPOSIX -e ' @fi=lstat("'${MAN_FILE}'"); print POSIX::strftime("%Y. %B", localtime($fi[9]));' 2>/dev/null); \
+sed -e "s/%DATE_OF_MAN_PAGE%/${MAN_DATE}/g" -e "s/%DISTR_VERSION%/4.8.23/g" -e "s{%prefix%{/usr/local{g" -e "s{%sysconfdir%{/usr/local/etc{g" -e "s{%libexecdir%{/usr/local/libexec{g" mc.1.in > mc.1
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/hu'
+Making all in it
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/it'
+MAN_FILE=mc.1.in; MAN_DATE=$(LC_ALL=it_IT.UTF-8 /usr/bin/perl -MPOSIX -e ' @fi=lstat("'${MAN_FILE}'"); print POSIX::strftime("%B %Y", localtime($fi[9]));' 2>/dev/null); \
+sed -e "s/%DATE_OF_MAN_PAGE%/${MAN_DATE}/g" -e "s/%DISTR_VERSION%/4.8.23/g" -e "s{%prefix%{/usr/local{g" -e "s{%sysconfdir%{/usr/local/etc{g" -e "s{%libexecdir%{/usr/local/libexec{g" mc.1.in > mc.1
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/it'
+Making all in pl
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/pl'
+MAN_FILE=mc.1.in; MAN_DATE=$(LC_ALL=pl_PL.UTF-8 /usr/bin/perl -MPOSIX -e ' @fi=lstat("'${MAN_FILE}'"); print POSIX::strftime("%B %Y", localtime($fi[9]));' 2>/dev/null); \
+sed -e "s/%DATE_OF_MAN_PAGE%/${MAN_DATE}/g" -e "s/%DISTR_VERSION%/4.8.23/g" -e "s{%prefix%{/usr/local{g" -e "s{%sysconfdir%{/usr/local/etc{g" -e "s{%libexecdir%{/usr/local/libexec{g" mc.1.in > mc.1
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/pl'
+Making all in ru
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/ru'
+MAN_FILE=mc.1.in; MAN_DATE=$(LC_ALL=ru_RU.UTF-8 /usr/bin/perl -MPOSIX -e ' @fi=lstat("'${MAN_FILE}'"); print POSIX::strftime("%B %Y", localtime($fi[9]));' 2>/dev/null); \
+sed -e "s/%DATE_OF_MAN_PAGE%/${MAN_DATE}/g" -e "s/%DISTR_VERSION%/4.8.23/g" -e "s{%prefix%{/usr/local{g" -e "s{%sysconfdir%{/usr/local/etc{g" -e "s{%libexecdir%{/usr/local/libexec{g" mc.1.in > mc.1
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/ru'
+Making all in sr
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/sr'
+MAN_FILE=mc.1.in; MAN_DATE=$(LC_ALL=sr_SR.UTF-8 /usr/bin/perl -MPOSIX -e ' @fi=lstat("'${MAN_FILE}'"); print POSIX::strftime("%B %Y.", localtime($fi[9]));' 2>/dev/null); \
+sed -e "s/%DATE_OF_MAN_PAGE%/${MAN_DATE}/g" -e "s/%DISTR_VERSION%/4.8.23/g" -e "s{%prefix%{/usr/local{g" -e "s{%sysconfdir%{/usr/local/etc{g" -e "s{%libexecdir%{/usr/local/libexec{g" mc.1.in > mc.1
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/sr'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man'
+MAN_FILE=mc.1.in; MAN_DATE=$(LC_ALL=en_US.UTF-8 /usr/bin/perl -MPOSIX -e ' @fi=lstat("'${MAN_FILE}'"); print POSIX::strftime("%B %Y", localtime($fi[9]));' 2>/dev/null); \
+sed -e "s/%DATE_OF_MAN_PAGE%/${MAN_DATE}/g" -e "s/%DISTR_VERSION%/4.8.23/g" -e "s{%prefix%{/usr/local{g" -e "s{%sysconfdir%{/usr/local/etc{g" -e "s{%libexecdir%{/usr/local/libexec{g" mc.1.in > mc.1
+MAN_FILE=mcedit.1.in; MAN_DATE=$(LC_ALL=en_US.UTF-8 /usr/bin/perl -MPOSIX -e ' @fi=lstat("'${MAN_FILE}'"); print POSIX::strftime("%B %Y", localtime($fi[9]));' 2>/dev/null); \
+sed -e "s/%DATE_OF_MAN_PAGE%/${MAN_DATE}/g" -e "s/%DISTR_VERSION%/4.8.23/g" -e "s{%prefix%{/usr/local{g" -e "s{%sysconfdir%{/usr/local/etc{g" -e "s{%libexecdir%{/usr/local/libexec{g" mcedit.1.in > mcedit.1
+MAN_FILE=mcview.1.in; MAN_DATE=$(LC_ALL=en_US.UTF-8 /usr/bin/perl -MPOSIX -e ' @fi=lstat("'${MAN_FILE}'"); print POSIX::strftime("%B %Y", localtime($fi[9]));' 2>/dev/null); \
+sed -e "s/%DATE_OF_MAN_PAGE%/${MAN_DATE}/g" -e "s/%DISTR_VERSION%/4.8.23/g" -e "s{%prefix%{/usr/local{g" -e "s{%sysconfdir%{/usr/local/etc{g" -e "s{%libexecdir%{/usr/local/libexec{g" mcview.1.in > mcview.1
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man'
+Making all in hlp
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp'
+Making all in es
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/es'
+../../../src/man2hlp/man2hlp ../../../doc/man/es/mc.1 ./xnc.hlp mc.hlp.es
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/es'
+Making all in hu
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/hu'
+../../../src/man2hlp/man2hlp ../../../doc/man/hu/mc.1 ./xnc.hlp mc.hlp.hu
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/hu'
+Making all in it
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/it'
+../../../src/man2hlp/man2hlp ../../../doc/man/it/mc.1 ./xnc.hlp mc.hlp.it
+man2hlp: Stale link "OPTIONS" in file "../../../doc/man/it/mc.1" on line 2145
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/it'
+Making all in pl
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/pl'
+../../../src/man2hlp/man2hlp ../../../doc/man/pl/mc.1 ./xnc.hlp mc.hlp.pl
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/pl'
+Making all in ru
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/ru'
+../../../src/man2hlp/man2hlp ../../../doc/man/ru/mc.1 ./xnc.hlp mc.hlp.ru
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/ru'
+Making all in sr
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/sr'
+../../../src/man2hlp/man2hlp ../../../doc/man/sr/mc.1 ./xnc.hlp mc.hlp.sr
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/sr'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp'
+../../src/man2hlp/man2hlp ../../doc/man/mc.1 ./xnc.hlp mc.hlp
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc'
+Making all in contrib
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib'
+Making all in dist
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist'
+Making all in gentoo
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist/gentoo'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist/gentoo'
+Making all in redhat
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist/redhat'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist/redhat'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib'
+sed "s%@""pkglibexecdir@%/usr/local/libexec/mc%" ./mc.csh.in > mc.csh
+sed "s%@""pkglibexecdir@%/usr/local/libexec/mc%" ./mc.sh.in > mc.sh
+sed "s%@""bindir@%/usr/local/bin%" ./mc-wrapper.csh.in > mc-wrapper.csh
+sed "s%@""bindir@%/usr/local/bin%" ./mc-wrapper.sh.in > mc-wrapper.sh
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib'
+Making all in misc
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc'
+Making all in ext.d
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc/ext.d'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc/ext.d'
+Making all in macros.d
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc/macros.d'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc/macros.d'
+Making all in skins
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc/skins'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc/skins'
+Making all in syntax
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc/syntax'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc/syntax'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc'
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23'
+make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23'
+
+```
+
+</details>
+
+#### make install
+
+<details>
+	<summary>make install</summary>
+
+```bash
+
+mikola-s@mikolas-VirtualBox:~/Downloads/mc-4.8.23$ sudo make install
+[sudo] password for mikola-s: 
+Making install in intl
+make[1]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/intl'
+if { test "mc" = "gettext-runtime" || test "mc" = "gettext-tools"; } \
+   && test 'no' = yes; then \
+  /bin/mkdir -p /usr/local/lib /usr/local/include; \
+  /usr/bin/install -c -m 644 libintl.h /usr/local/include/libintl.h; \
+  /bin/sh ../libtool --mode=install \
+    /usr/bin/install -c -m 644 libintl.a /usr/local/lib/libintl.a; \
+  if test "@RELOCATABLE@" = yes; then \
+    dependencies=`sed -n -e 's,^dependency_libs=\(.*\),\1,p' < /usr/local/lib/libintl.la | sed -e "s,^',," -e "s,'\$,,"`; \
+    if test -n "$dependencies"; then \
+      rm -f /usr/local/lib/libintl.la; \
+    fi; \
+  fi; \
+else \
+  : ; \
+fi
+if test "mc" = "gettext-tools" \
+   && test 'no' = no \
+   && test yes != no; then \
+  /bin/mkdir -p /usr/local/lib; \
+  /bin/sh ../libtool --mode=install \
+    /usr/bin/install -c -m 644 libgnuintl.a /usr/local/lib/libgnuintl.a; \
+  rm -f /usr/local/lib/preloadable_libintl.so; \
+  /usr/bin/install -c -m 644 /usr/local/lib/libgnuintl.so /usr/local/lib/preloadable_libintl.so; \
+  /bin/sh ../libtool --mode=uninstall \
+    rm -f /usr/local/lib/libgnuintl.a; \
+else \
+  : ; \
+fi
+if test 'no' = yes; then \
+  if test yes = no; then \
+    case 'linux-gnu' in \
+      darwin[56]*) \
+        need_charset_alias=true ;; \
+      darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+        need_charset_alias=false ;; \
+      *) \
+        need_charset_alias=true ;; \
+    esac; \
+  else \
+    need_charset_alias=false; \
+  fi; \
+  if $need_charset_alias; then \
+    /bin/mkdir -p /usr/local/lib; \
+  fi; \
+  temp=/usr/local/lib/t-charset.alias; \
+  dest=/usr/local/lib/charset.alias; \
+  if test -f /usr/local/lib/charset.alias; then \
+    orig=/usr/local/lib/charset.alias; \
+    sed -f ref-add.sed $orig > $temp; \
+    /usr/bin/install -c -m 644 $temp $dest; \
+    rm -f $temp; \
+  else \
+    if $need_charset_alias; then \
+      orig=charset.alias; \
+      sed -f ref-add.sed $orig > $temp; \
+      /usr/bin/install -c -m 644 $temp $dest; \
+      rm -f $temp; \
+    fi; \
+  fi; \
+  /bin/mkdir -p /usr/local/share/locale; \
+  test -f /usr/local/share/locale/locale.alias \
+    && orig=/usr/local/share/locale/locale.alias \
+    || orig=./locale.alias; \
+  temp=/usr/local/share/locale/t-locale.alias; \
+  dest=/usr/local/share/locale/locale.alias; \
+  sed -f ref-add.sed $orig > $temp; \
+  /usr/bin/install -c -m 644 $temp $dest; \
+  rm -f $temp; \
+else \
+  : ; \
+fi
+if test "mc" = "gettext-tools"; then \
+  /bin/mkdir -p /usr/local/share/gettext/intl; \
+  /usr/bin/install -c -m 644 VERSION /usr/local/share/gettext/intl/VERSION; \
+  /usr/bin/install -c -m 644 ChangeLog.inst /usr/local/share/gettext/intl/ChangeLog; \
+  dists="COPYING.LIB-2.0 COPYING.LIB-2.1 Makefile.in config.charset locale.alias ref-add.sin ref-del.sin export.h libintl.rc gmo.h gettextP.h hash-string.h loadinfo.h plural-exp.h eval-plural.h localcharset.h lock.h relocatable.h tsearch.h tsearch.c xsize.h printf-args.h printf-args.c printf-parse.h wprintf-parse.h printf-parse.c vasnprintf.h vasnwprintf.h vasnprintf.c os2compat.h libgnuintl.h.in bindtextdom.c dcgettext.c dgettext.c gettext.c finddomain.c hash-string.c loadmsgcat.c localealias.c textdomain.c l10nflist.c explodename.c dcigettext.c dcngettext.c dngettext.c ngettext.c plural.y plural-exp.c localcharset.c threadlib.c lock.c relocatable.c langprefs.c localename.c log.c printf.c setlocale.c version.c osdep.c os2compat.c intl-exports.c intl-compat.c"; \
+  for file in $dists; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /usr/local/share/gettext/intl/$file; \
+  done; \
+  chmod a+x /usr/local/share/gettext/intl/config.charset; \
+  dists="plural.c"; \
+  for file in $dists; do \
+    if test -f $file; then dir=.; else dir=.; fi; \
+    /usr/bin/install -c -m 644 $dir/$file \
+		    /usr/local/share/gettext/intl/$file; \
+  done; \
+  dists="xopen-msg.sed linux-msg.sed po2tbl.sed.in cat-compat.c COPYING.LIB-2 gettext.h libgettext.h plural-eval.c libgnuintl.h libgnuintl.h_vms Makefile.vms libgnuintl.h.msvc-static libgnuintl.h.msvc-shared Makefile.msvc"; \
+  for file in $dists; do \
+    rm -f /usr/local/share/gettext/intl/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/intl'
+Making install in po
+make[1]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/po'
+installing az.gmo as /usr/local/share/locale/az/LC_MESSAGES/mc.mo
+installing be.gmo as /usr/local/share/locale/be/LC_MESSAGES/mc.mo
+installing bg.gmo as /usr/local/share/locale/bg/LC_MESSAGES/mc.mo
+installing ca.gmo as /usr/local/share/locale/ca/LC_MESSAGES/mc.mo
+installing cs.gmo as /usr/local/share/locale/cs/LC_MESSAGES/mc.mo
+installing da.gmo as /usr/local/share/locale/da/LC_MESSAGES/mc.mo
+installing de.gmo as /usr/local/share/locale/de/LC_MESSAGES/mc.mo
+installing de_CH.gmo as /usr/local/share/locale/de_CH/LC_MESSAGES/mc.mo
+installing el.gmo as /usr/local/share/locale/el/LC_MESSAGES/mc.mo
+installing en_GB.gmo as /usr/local/share/locale/en_GB/LC_MESSAGES/mc.mo
+installing eo.gmo as /usr/local/share/locale/eo/LC_MESSAGES/mc.mo
+installing es.gmo as /usr/local/share/locale/es/LC_MESSAGES/mc.mo
+installing et.gmo as /usr/local/share/locale/et/LC_MESSAGES/mc.mo
+installing eu.gmo as /usr/local/share/locale/eu/LC_MESSAGES/mc.mo
+installing fa.gmo as /usr/local/share/locale/fa/LC_MESSAGES/mc.mo
+installing fi.gmo as /usr/local/share/locale/fi/LC_MESSAGES/mc.mo
+installing fr.gmo as /usr/local/share/locale/fr/LC_MESSAGES/mc.mo
+installing fr_CA.gmo as /usr/local/share/locale/fr_CA/LC_MESSAGES/mc.mo
+installing gl.gmo as /usr/local/share/locale/gl/LC_MESSAGES/mc.mo
+installing hr.gmo as /usr/local/share/locale/hr/LC_MESSAGES/mc.mo
+installing hu.gmo as /usr/local/share/locale/hu/LC_MESSAGES/mc.mo
+installing ia.gmo as /usr/local/share/locale/ia/LC_MESSAGES/mc.mo
+installing id.gmo as /usr/local/share/locale/id/LC_MESSAGES/mc.mo
+installing it.gmo as /usr/local/share/locale/it/LC_MESSAGES/mc.mo
+installing ja.gmo as /usr/local/share/locale/ja/LC_MESSAGES/mc.mo
+installing ka.gmo as /usr/local/share/locale/ka/LC_MESSAGES/mc.mo
+installing kk.gmo as /usr/local/share/locale/kk/LC_MESSAGES/mc.mo
+installing ko.gmo as /usr/local/share/locale/ko/LC_MESSAGES/mc.mo
+installing lt.gmo as /usr/local/share/locale/lt/LC_MESSAGES/mc.mo
+installing lv.gmo as /usr/local/share/locale/lv/LC_MESSAGES/mc.mo
+installing mn.gmo as /usr/local/share/locale/mn/LC_MESSAGES/mc.mo
+installing nb.gmo as /usr/local/share/locale/nb/LC_MESSAGES/mc.mo
+installing nl.gmo as /usr/local/share/locale/nl/LC_MESSAGES/mc.mo
+installing pl.gmo as /usr/local/share/locale/pl/LC_MESSAGES/mc.mo
+installing pt.gmo as /usr/local/share/locale/pt/LC_MESSAGES/mc.mo
+installing pt_BR.gmo as /usr/local/share/locale/pt_BR/LC_MESSAGES/mc.mo
+installing ro.gmo as /usr/local/share/locale/ro/LC_MESSAGES/mc.mo
+installing ru.gmo as /usr/local/share/locale/ru/LC_MESSAGES/mc.mo
+installing sk.gmo as /usr/local/share/locale/sk/LC_MESSAGES/mc.mo
+installing sl.gmo as /usr/local/share/locale/sl/LC_MESSAGES/mc.mo
+installing sr.gmo as /usr/local/share/locale/sr/LC_MESSAGES/mc.mo
+installing sv.gmo as /usr/local/share/locale/sv/LC_MESSAGES/mc.mo
+installing szl.gmo as /usr/local/share/locale/szl/LC_MESSAGES/mc.mo
+installing ta.gmo as /usr/local/share/locale/ta/LC_MESSAGES/mc.mo
+installing te.gmo as /usr/local/share/locale/te/LC_MESSAGES/mc.mo
+installing tr.gmo as /usr/local/share/locale/tr/LC_MESSAGES/mc.mo
+installing uk.gmo as /usr/local/share/locale/uk/LC_MESSAGES/mc.mo
+installing vi.gmo as /usr/local/share/locale/vi/LC_MESSAGES/mc.mo
+installing wa.gmo as /usr/local/share/locale/wa/LC_MESSAGES/mc.mo
+installing zh_CN.gmo as /usr/local/share/locale/zh_CN/LC_MESSAGES/mc.mo
+installing zh_TW.gmo as /usr/local/share/locale/zh_TW/LC_MESSAGES/mc.mo
+if test "mc" = "gettext-tools"; then \
+  /bin/mkdir -p /usr/local/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /usr/local/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /usr/local/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/po'
+Making install in lib
+make[1]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib'
+Making install in event
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/event'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/event'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/event'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/event'
+Making install in filehighlight
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/filehighlight'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/filehighlight'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/filehighlight'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/filehighlight'
+Making install in mcconfig
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/mcconfig'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/mcconfig'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/mcconfig'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/mcconfig'
+Making install in search
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/search'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/search'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/search'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/search'
+Making install in skin
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/skin'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/skin'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/skin'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/skin'
+Making install in tty
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/tty'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/tty'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/tty'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/tty'
+Making install in vfs
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/vfs'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/vfs'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/vfs'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/vfs'
+Making install in strutil
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/strutil'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/strutil'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/strutil'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/strutil'
+Making install in widget
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/widget'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib/widget'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/widget'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib/widget'
+Making install in .
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/lib'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib'
+make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/lib'
+Making install in src
+make[1]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+Making install in filemanager
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/filemanager'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/filemanager'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/filemanager'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/filemanager'
+Making install in man2hlp
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/man2hlp'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/man2hlp'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/man2hlp'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/man2hlp'
+Making install in vfs
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs'
+Making install in local
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/local'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/local'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/local'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/local'
+Making install in cpio
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/cpio'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/cpio'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/cpio'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/cpio'
+Making install in extfs
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs'
+Making install in helpers
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs/helpers'
+make[5]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs/helpers'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/libexec/mc/extfs.d'
+ /usr/bin/install -c -m 644 README README.extfs '/usr/local/libexec/mc/extfs.d'
+ /bin/mkdir -p '/usr/local/libexec/mc/extfs.d'
+ /usr/bin/install -c bpp changesetfs gitfs+ patchsetfs rpm trpm u7z a+ apt+ audio deb deba debd dpkg+ iso9660 hp48+ lslR mailfs patchfs rpms+ s3+ uace ualz uar uarc uarj uc1541 ucab uha ulha ulib urar uzip uzoo '/usr/local/libexec/mc/extfs.d'
+make[5]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs/helpers'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs/helpers'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs'
+make[5]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/extfs'
+Making install in fish
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish'
+Making install in helpers
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish/helpers'
+make[5]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish/helpers'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/libexec/mc/fish'
+ /usr/bin/install -c -m 644 README.fish ls mkdir fexists unlink chown chmod rmdir ln mv hardlink get send append info utime '/usr/local/libexec/mc/fish'
+make[5]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish/helpers'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish/helpers'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish'
+make[5]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/fish'
+Making install in ftpfs
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/ftpfs'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/ftpfs'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/ftpfs'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/ftpfs'
+Making install in sfs
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/sfs'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/sfs'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/etc/mc'
+ /usr/bin/install -c -m 644 sfs.ini '/usr/local/etc/mc'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/sfs'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/sfs'
+Making install in tar
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/tar'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/tar'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/tar'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs/tar'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/vfs'
+Making install in viewer
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/viewer'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/viewer'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/viewer'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/viewer'
+Making install in editor
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/editor'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/editor'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/editor'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/editor'
+Making install in diffviewer
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/diffviewer'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/diffviewer'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/diffviewer'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/diffviewer'
+Making install in subshell
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/subshell'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/subshell'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/subshell'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/subshell'
+Making install in consaver
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/consaver'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src/consaver'
+ /bin/mkdir -p '/usr/local/libexec/mc'
+  /bin/bash ../../libtool   --mode=install /usr/bin/install -c cons.saver '/usr/local/libexec/mc'
+libtool: install: /usr/bin/install -c cons.saver /usr/local/libexec/mc/cons.saver
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/consaver'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src/consaver'
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+ /bin/mkdir -p '/usr/local/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c mc '/usr/local/bin'
+libtool: install: /usr/bin/install -c mc /usr/local/bin/mc
+make  install-exec-hook
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+make install_mcview
+make[5]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+cd /usr/local/bin/ && rm -f mcview && ln -s mc mcview
+make[5]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+make install_mcedit
+make[5]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+cd /usr/local/bin/ && rm -f mcedit && ln -s mc mcedit
+make[5]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+make install_mcdiff
+make[5]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+cd /usr/local/bin/ && rm -f mcdiff && ln -s mc mcdiff
+make[5]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/src'
+Making install in doc
+make[1]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc'
+Making install in hints
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints'
+Making install in l10n
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints/l10n'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints/l10n'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/mc/hints'
+ /usr/bin/install -c -m 644 ./mc.hint.af ./mc.hint.ar ./mc.hint.az ./mc.hint.be ./mc.hint.bg ./mc.hint.br ./mc.hint.ca ./mc.hint.cs ./mc.hint.da ./mc.hint.de ./mc.hint.de_CH ./mc.hint.el ./mc.hint.en_GB ./mc.hint.eo ./mc.hint.es ./mc.hint.et ./mc.hint.eu ./mc.hint.fa ./mc.hint.fi ./mc.hint.fr ./mc.hint.fr_CA ./mc.hint.ga ./mc.hint.gl ./mc.hint.he ./mc.hint.hr ./mc.hint.hu ./mc.hint.ia ./mc.hint.id ./mc.hint.it ./mc.hint.it_IT ./mc.hint.ja ./mc.hint.ka ./mc.hint.kk ./mc.hint.ko ./mc.hint.lt ./mc.hint.nl ./mc.hint.pl ./mc.hint.pt ./mc.hint.pt_BR ./mc.hint.ro '/usr/local/share/mc/hints'
+ /usr/bin/install -c -m 644 ./mc.hint.ru ./mc.hint.sk ./mc.hint.sl ./mc.hint.sr ./mc.hint.sv ./mc.hint.sv_SE ./mc.hint.szl ./mc.hint.te ./mc.hint.tr ./mc.hint.uk ./mc.hint.uz ./mc.hint.zh ./mc.hint.zh_CN '/usr/local/share/mc/hints'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints/l10n'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints/l10n'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/mc/hints'
+ /usr/bin/install -c -m 644 mc.hint '/usr/local/share/mc/hints'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hints'
+Making install in man
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man'
+Making install in es
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/es'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/es'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/man/es/man1'
+ /usr/bin/install -c -m 644 mc.1 '/usr/local/share/man/es/man1'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/es'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/es'
+Making install in hu
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/hu'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/hu'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/man/hu/man1'
+ /usr/bin/install -c -m 644 mc.1 '/usr/local/share/man/hu/man1'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/hu'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/hu'
+Making install in it
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/it'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/it'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/man/it/man1'
+ /usr/bin/install -c -m 644 mc.1 '/usr/local/share/man/it/man1'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/it'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/it'
+Making install in pl
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/pl'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/pl'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/man/pl/man1'
+ /usr/bin/install -c -m 644 mc.1 '/usr/local/share/man/pl/man1'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/pl'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/pl'
+Making install in ru
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/ru'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/ru'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/man/ru/man1'
+ /usr/bin/install -c -m 644 mc.1 '/usr/local/share/man/ru/man1'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/ru'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/ru'
+Making install in sr
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/sr'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/sr'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/man/sr/man1'
+ /usr/bin/install -c -m 644 mc.1 '/usr/local/share/man/sr/man1'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/sr'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man/sr'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/man/man1'
+ /usr/bin/install -c -m 644 mc.1 mcedit.1 mcview.1 '/usr/local/share/man/man1'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/man'
+Making install in hlp
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp'
+Making install in es
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/es'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/es'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/mc/help'
+ /usr/bin/install -c -m 644 mc.hlp.es '/usr/local/share/mc/help'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/es'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/es'
+Making install in hu
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/hu'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/hu'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/mc/help'
+ /usr/bin/install -c -m 644 mc.hlp.hu '/usr/local/share/mc/help'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/hu'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/hu'
+Making install in it
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/it'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/it'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/mc/help'
+ /usr/bin/install -c -m 644 mc.hlp.it '/usr/local/share/mc/help'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/it'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/it'
+Making install in pl
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/pl'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/pl'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/mc/help'
+ /usr/bin/install -c -m 644 mc.hlp.pl '/usr/local/share/mc/help'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/pl'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/pl'
+Making install in ru
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/ru'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/ru'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/mc/help'
+ /usr/bin/install -c -m 644 mc.hlp.ru '/usr/local/share/mc/help'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/ru'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/ru'
+Making install in sr
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/sr'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/sr'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/mc/help'
+ /usr/bin/install -c -m 644 mc.hlp.sr '/usr/local/share/mc/help'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/sr'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp/sr'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/mc/help'
+ /usr/bin/install -c -m 644 mc.hlp '/usr/local/share/mc/help'
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc/hlp'
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc'
+make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/doc'
+Making install in contrib
+make[1]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib'
+Making install in dist
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist'
+Making install in gentoo
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist/gentoo'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist/gentoo'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist/gentoo'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist/gentoo'
+Making install in redhat
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist/redhat'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist/redhat'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist/redhat'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist/redhat'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist'
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib/dist'
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/contrib'
+ /bin/mkdir -p '/usr/local/libexec/mc'
+ /usr/bin/install -c mc.csh mc.sh mc-wrapper.csh mc-wrapper.sh '/usr/local/libexec/mc'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib'
+make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/contrib'
+Making install in misc
+make[1]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc'
+Making install in ext.d
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc/ext.d'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc/ext.d'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/libexec/mc/ext.d'
+ /usr/bin/install -c archive.sh image.sh package.sh sound.sh video.sh doc.sh misc.sh text.sh web.sh '/usr/local/libexec/mc/ext.d'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc/ext.d'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc/ext.d'
+Making install in macros.d
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc/macros.d'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc/macros.d'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/mc/examples/macros.d'
+ /usr/bin/install -c -m 644 macro.0.sh macro.1.sh macro.3.sh macro.4.sh macro.5.sh macro.6.sh macro.7.sh '/usr/local/share/mc/examples/macros.d'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc/macros.d'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc/macros.d'
+Making install in skins
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc/skins'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc/skins'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/mc/skins'
+ /usr/bin/install -c -m 644 dark.ini darkfar.ini default.ini double-lines.ini featured-plus.ini featured.ini gotar.ini gray-green-purple256.ini gray-orange-blue256.ini mc46.ini modarcon16-defbg.ini modarcon16.ini modarcon16root-defbg.ini modarcon16root.ini modarin256-defbg.ini modarin256.ini modarin256root-defbg.ini modarin256root.ini nicedark.ini sand256.ini seasons-autumn16M.ini seasons-spring16M.ini seasons-summer16M.ini seasons-winter16M.ini xoria256.ini yadt256-defbg.ini yadt256.ini '/usr/local/share/mc/skins'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc/skins'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc/skins'
+Making install in syntax
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc/syntax'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc/syntax'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/share/mc/syntax'
+ /usr/bin/install -c -m 644 Syntax PKGBUILD.syntax ada95.syntax as.syntax aspx.syntax assembler.syntax awk.syntax c.syntax cabal.syntax changelog.syntax cmake.syntax cs.syntax css.syntax cuda.syntax cxx.syntax cython.syntax d.syntax debian-changelog.syntax debian-control.syntax debian-description.syntax debian-sources-list.syntax diff.syntax dlink.syntax dos.syntax ebuild.syntax eiffel.syntax erlang.syntax f90.syntax filehighlight.syntax fortran.syntax glsl.syntax go.syntax haskell.syntax hive.syntax html.syntax idl.syntax ini.syntax j.syntax jal.syntax java.syntax '/usr/local/share/mc/syntax'
+ /usr/bin/install -c -m 644 js.syntax latex.syntax lisp.syntax lkr.syntax lsm.syntax lua.syntax m4.syntax mail.syntax makefile.syntax markdown.syntax ml.syntax meson.syntax named.syntax nemerle.syntax nroff.syntax octave.syntax opencl.syntax osl.syntax pascal.syntax perl.syntax php.syntax po.syntax povray.syntax procmail.syntax properties.syntax protobuf.syntax puppet.syntax python.syntax r.syntax ruby.syntax rust.syntax sh.syntax slang.syntax smalltalk.syntax spec.syntax sql.syntax strace.syntax swig.syntax syntax.syntax tcl.syntax '/usr/local/share/mc/syntax'
+ /usr/bin/install -c -m 644 texinfo.syntax ts.syntax tt.syntax unknown.syntax verilog.syntax vhdl.syntax xml.syntax yaml.syntax yum-repo.syntax yxx.syntax '/usr/local/share/mc/syntax'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc/syntax'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc/syntax'
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc'
+make[3]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/usr/local/etc/mc'
+ /usr/bin/install -c -m 644 filehighlight.ini mc.default.keymap mc.emacs.keymap mc.menu mcedit.menu mc.ext '/usr/local/etc/mc'
+ /bin/mkdir -p '/usr/local/etc/mc'
+ /usr/bin/install -c edit.indent.rc '/usr/local/etc/mc'
+ /bin/mkdir -p '/usr/local/share/mc'
+ /usr/bin/install -c -m 644 mc.lib mc.charsets '/usr/local/share/mc'
+make  install-data-hook
+make[4]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23/misc'
+cd /usr/local/etc/mc && rm -f mc.keymap && ln -s mc.default.keymap mc.keymap
+make[4]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc'
+make[3]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc'
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc'
+make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23/misc'
+make[1]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23'
+make[2]: Entering directory '/home/mikola-s/Downloads/mc-4.8.23'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23'
+make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23'
 
 
+```
+
+</details>
+
+
+#### mc 
+
+![screenshot](./screenshot.png)
