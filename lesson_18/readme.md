@@ -1,8 +1,10 @@
 ## Домашнее задание №18
 ### Установить Midnight Commander
 
+
+--------------
 #### Скачивание исходника (wget)
---------
+
 
 <details open="open">
 	<summary>wget http://ftp.midnight-commander.org/mc-4.8.23.tar.xz</summary>	
@@ -29,9 +31,9 @@ mikola-s@mikolas-VirtualBox:~/Downloads$
 
 
 
-
+------------
 #### Распаковка архива (tar)
-----------
+
 
 опции для распаковки 
 
@@ -1331,9 +1333,9 @@ mikola-s@mikolas-VirtualBox:~/Downloads$
 
 
 
-
+---------------
 #### ./configure (первый заход)
-------------
+
 
 <details>
 	<summary> ./configure </summary>
@@ -1504,9 +1506,9 @@ configure: error: glib-2.0 not found or version too old (must be >= 2.26)
 
 
 
-
+------------
 #### Установка glib-2.0 
-----------------
+
 
 <details>
 	<summary> sudo apt install glib2.0 </summary>
@@ -1896,9 +1898,9 @@ Processing triggers for libglib2.0-0:amd64 (2.56.4-0ubuntu0.18.04.4) ...
 
 
 
-
+-----------------
 #### ./configure (второй заход)
-----------------
+
 <details>
 	<summary>./configure </summary>
 
@@ -2078,9 +2080,9 @@ configure: error: S-Lang library version 2.0 or newer not found
 
 
 
-
+-----------
 #### Установка S-lang
-------------------------
+
 
 <details>
 	<summary> sudo apt install libslang2-dev </summary>
@@ -2129,9 +2131,9 @@ Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 
 
 
-
+------------------
 #### ./configure (третий заход)
----------------
+
 
 <details>
 	<summary>./configure</summary>
@@ -2739,9 +2741,9 @@ Configuration:
 
 
 
-
-#### make
 ---------------
+#### make
+
 
 <details>
 	<summary>make</summary>
@@ -3211,9 +3213,9 @@ make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23'
 
 
 
-
+----------------
 #### make install
--------------------
+
 
 <details>
 	<summary>make install</summary>
@@ -3858,7 +3860,7 @@ make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23'
 
 
 
-
+----------------
 #### mc 
--------------------------
+
 ![screenshot](./screenshot.png)
