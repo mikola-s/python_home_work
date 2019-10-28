@@ -2,6 +2,7 @@
 ### Установить Midnight Commander
 
 #### Скачивание исходника (wget)
+--------
 
 <details open="open">
 	<summary>wget http://ftp.midnight-commander.org/mc-4.8.23.tar.xz</summary>	
@@ -27,7 +28,10 @@ mikola-s@mikolas-VirtualBox:~/Downloads$
 </details>
 
 
+
+
 #### Распаковка архива (tar)
+----------
 
 опции для распаковки 
 
@@ -1326,7 +1330,10 @@ mikola-s@mikolas-VirtualBox:~/Downloads$
 </details>
 
 
+
+
 #### ./configure (первый заход)
+------------
 
 <details>
 	<summary> ./configure </summary>
@@ -1494,7 +1501,12 @@ configure: error: glib-2.0 not found or version too old (must be >= 2.26)
 
 **результат:** `configure: error: glib-2.0 not found or version too old (must be >= 2.26)`
 
+
+
+
+
 #### Установка glib-2.0 
+----------------
 
 <details>
 	<summary> sudo apt install glib2.0 </summary>
@@ -1881,8 +1893,12 @@ Processing triggers for libglib2.0-0:amd64 (2.56.4-0ubuntu0.18.04.4) ...
 
 </details>
 
-#### ./configure (второй заход)
 
+
+
+
+#### ./configure (второй заход)
+----------------
 <details>
 	<summary>./configure </summary>
 
@@ -2058,8 +2074,13 @@ configure: error: S-Lang library version 2.0 or newer not found
 
 **Результат:** `configure: error: S-Lang library version 2.0 or newer not found`
 
-#### Установка S-lang
 
+
+
+
+
+#### Установка S-lang
+------------------------
 
 <details>
 	<summary> sudo apt install libslang2-dev </summary>
@@ -2105,7 +2126,12 @@ Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 
 </details>
 
+
+
+
+
 #### ./configure (третий заход)
+---------------
 
 <details>
 	<summary>./configure</summary>
@@ -2682,7 +2708,7 @@ Configuration:
 
 <details open="open">
 	<summary>
-		<b>Результат:**</b> 
+		<b>Результат:</b> 
 	</summary>
 
 ```bash
@@ -2710,7 +2736,12 @@ Configuration:
 ```
 </details>
 
+
+
+
+
 #### make
+---------------
 
 <details>
 	<summary>make</summary>
@@ -3177,7 +3208,12 @@ make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23'
 
 </details>
 
+
+
+
+
 #### make install
+-------------------
 
 <details>
 	<summary>make install</summary>
@@ -3820,6 +3856,9 @@ make[1]: Leaving directory '/home/mikola-s/Downloads/mc-4.8.23'
 </details>
 
 
-#### mc 
 
+
+
+#### mc 
+-------------------------
 ![screenshot](./screenshot.png)
