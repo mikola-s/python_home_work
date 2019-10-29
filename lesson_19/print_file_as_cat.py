@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from sys import argv
+import sys
 
 
 def processing_write_str(write_str=None):
     if write_str == None:
-        
+        sys.exit()
     print(write_str)
 
 
@@ -29,19 +29,15 @@ def print_file_as_cat(file=str):
 
     Пример:
     $ python3 print_file_as_cat.py example_files/example_file_1.txt
-
-    пример
-    текстового
-    файла
-    для
-    домашнего задания
+    пример текстового файла
+    для домашнего задания
     к уроку 19
 
     :param file: [путь_к_файлу]имя_файла
     :return: None
 
     """
-    print_file_in_terminal(open_and_read_file(processing_write_str(argv[1])))
+    print_file_in_terminal(open_and_read_file(processing_write_str(sys.argv[1])))
 
 
 print_file_as_cat()
