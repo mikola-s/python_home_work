@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-import print_file_as_cat
+import sys
+from print_file_as_cat import print_file_as_cat
 
 
 def print_files_as_cat(file_list=None):
@@ -25,4 +26,8 @@ def print_files_as_cat(file_list=None):
     :return:
 
     """
-    pass
+    tmp = map(print_file_as_cat, file_list)
+
+
+if __name__ == "__main__":
+    print_files_as_cat(sys.argv[1::])
