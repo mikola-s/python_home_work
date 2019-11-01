@@ -6,14 +6,14 @@
 - python 3.7
 - pygment 2.4.2
 
-проект проверил в Ubuntu 18.04 Bionic Beaver 
-
-```shell script
-
+Для установки окружения
+```
 $ python3.7 -m venv .venv
 $ pip install -r requirement.txt
-
 ```
+
+проект тестировал в Ubuntu 18.04 Bionic Beaver 
+
 
 ### 1 уровень
  
@@ -27,14 +27,13 @@ $ pip install -r requirement.txt
 ## print\_file\_as\_cat.py
 
 Выводит в стандартный вывод содержимое одного файла с именем указанным в [<ПУТЬ>]<ФАЙЛ>
+
 ------------------
 
 Применение:
 
-```shell script
-
-~$ python3 print_file_as_cat.py [<ПУТЬ>]<ФАЙЛ>
-
+```
+$ python3 print_file_as_cat.py [<ПУТЬ>]<ФАЙЛ>
 ```
  
 
@@ -42,9 +41,9 @@ $ pip install -r requirement.txt
 Если в [<ПУТЬ>]<ФАЙЛ> есть пробелы то [<ПУТЬ>]<ФАЙЛ> надо писать в кавычках (")
 
 Пример:
-```shell script
-~$ python3 print_file_as_cat.py "file with spaces.txt" 
-~$ python3 print_file_as_cat.py "./dir with space/text.txt"
+```
+$ python3 print_file_as_cat.py "file with spaces.txt" 
+$ python3 print_file_as_cat.py "./dir with space/text.txt"
 ```
 -------------------
 
@@ -52,14 +51,14 @@ $ pip install -r requirement.txt
 
 Примеры использования:
 
-```shell script
+```
 
-~$ python3 print_file_as_cat.py example_files/example_file_1.txt
+$ python3 print_file_as_cat.py example_files/example_file_1.txt
 пример текстового файла
 для домашнего задания
 к уроку 19
 
-~$ python3 print_file_as_cat.py example_files/example_file_2.py
+$ python3 print_file_as_cat.py example_files/example_file_2.py
 #пример файла python
 print('Мотурначка!')
 
@@ -68,16 +67,14 @@ print('Мотурначка!')
 -----------------
 ### Описание функций:
 
-#### processing_input(input_str)
-
-проверяет введенный путь и имя файла
+#### processing\_input(input\_str)
 
 проверяет есть ли в `input_str` путь и является ли он путем к файлу
 если файл не существует или путь неправильный возвращает сообщение об ошибке
 
 ```
 :param input_str: <строка содержащая путь и имя файла>
-:return <путь и имя файла> 
+:return: <путь и имя файла> 
 ```
 -----------------------
 
@@ -109,44 +106,54 @@ print('Мотурначка!')
 :param argument: [<ПУТЬ>]<ФАЙЛ> 
 ```
 
-
+------------
 
 
 ### 2 уровень 
 
 > реализовать программу как с любым количество аргументов.
 
-## print\_files\_as\_cat
+------------
+
+## print\_files\_as\_cat.py
 
 Выводит содержимое одного или нескольких файлов в стандартный вывод
+В программе используется модуль `print_file_as_cat`
 
-    Применение: ~$ python3 print_files_as_cat.py [<ПУТЬ>]<ФАЙЛ> [[<ПУТЬ>]<ФАЙЛ> ...]
-            или ~$ ./print_files_as_cat.py [<ПУТЬ>]<ФАЙЛ> [[<ПУТЬ>]<ФАЙЛ> ...]
-""" Выводит содержимое файлов в терминал
+Применение:
 
-Использование: python3 print_file_as_cat.py [ПУТЬ]ФАЙЛ_1 [[ПУТЬ]ФАЙЛ_2 [ПУТЬ]ФАЙЛ_3 ...]
+```
+ ~$ python3 print_files_as_cat.py [<ПУТЬ1>]<ФАЙЛ1> [[<ПУТЬ2>]<ФАЙЛ2> ...]
+```
 
-Реализует программу cat в python 3.7
+-----------------
 
-Выводит в терминал содержимое файла указанного в [ПУТЬ]ФАЙЛ
-[ПУТЬ]  может быть абсолютным или относительным
-        можно не указывать если файл находится в текущей папке
-Если параметр [ПУТЬ]ФАЙЛ не указан не выводит ничего
-Если файл пустой то программа завершается.
+Если в [<ПУТЬ>]<ФАЙЛ> есть пробелы то [<ПУТЬ>]<ФАЙЛ> надо писать в кавычках (")
 
 Пример:
-$ python3 print_file_as_cat.py example_files/example_file_1.txt example_files/example_file_2.py
+```
+$ python3 print_files_as_cat.py "file with spaces.txt" "./dir with space/text.txt" 
+```
+--------------
+            
+Примеры использования:
+```
+$ python3 print_files_as_cat.py example_files/example_file_1.txt example_files/example_file_2.py 
 пример текстового файла
 для домашнего задания
 к уроку 19
 #пример файла python
 print('Мотурначка!')
+``` 
+----------------
 
-:param file_list:
-:return:
+### описание функции:
 
-"""
+#### print_files_as_cat(arguments)
 
+циклически передает в функцию `print_files_as_cat` элементы списка `arguments`  
+
+----------------------
 
 ### 3 уровень 
 
@@ -155,3 +162,6 @@ print('Мотурначка!')
 > Файл должен раскрашиваться в зависимости от типа файла. 
 > Например у `json` должна быть одна раскраска, у `yaml` файла другая.
 > Библиотека которая поможет в раскраске файля http://pygments.org/
+---------------
+
+colo
