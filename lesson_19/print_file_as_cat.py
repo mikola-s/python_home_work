@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
 import sys
 
 
 def processing_input(input_str):
-    """
-    проверяет введенный путь и имя файла
+    """    проверяет введенный путь и имя файла
 
     проверяет есть ли в input_str путь и является ли он путем к файлу
     если файл не существует или путь неправильный возвращает сообщение об ошибке
+
     :param input_str: [<ПУТЬ>]<ФАЙЛ>
     :return: [<ПУТЬ>]<ФАЙЛ>
     """
@@ -27,8 +29,7 @@ def processing_input(input_str):
 
 
 def open_and_read_file(path_file):
-    """
-    открывает файл на чтение и считывает его построчно в список
+    """    открывает файл на чтение и считывает его построчно в список
 
     :param path_file: [<ПУТЬ>]<ФАЙЛ>
     :return: <список со строками файла>
@@ -38,28 +39,28 @@ def open_and_read_file(path_file):
             return [line for line in incoming_file]
     except IOError:
         print('IOError: не удалось обработать файл --', path_file)
+        sys.exit()
 
 
 def print_file(list_of_file):
-    """
-    выводит элементы списка в стандартный вывод
+    """    выводит элементы списка в стандартный вывод
 
     :param list_of_file: <список>
+
     """
-    return [print(line, end='') for line in list_of_file]
+    print(*list_of_file, end='', sep='')
 
 
-def print_file_as_cat(argument=str):
-    """
-    Выводит содержимое файла в стандартный вывод
+def print_file_as_cat(arguments):
+    """    Выводит содержимое файла в стандартный вывод
 
-    Применение: ~$ python3 print_file_as_cat.py [<ПУТЬ>]<ФАЙЛ>
-                ~$ ./print_file_as_cat.py [<ПУТЬ>]<ФАЙЛ>
+    Применение:
+    $ python3 print_file_as_cat.py [<ПУТЬ>]<ФАЙЛ>
 
     Дополнительная информация: <https://github.com/mikola-s/python_home_work/tree/master/lesson_19>
-    """
 
-    print_file(open_and_read_file(processing_input(argument)))
+    """
+    print_file(open_and_read_file(processing_input(arguments)))
 
 
 if __name__ == "__main__":
