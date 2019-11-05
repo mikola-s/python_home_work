@@ -14,7 +14,7 @@
 
 
 <details>
-	<summary>создание таблицы отношений films_actors_link</summary>
+	<summary>создание таблицы отношений films_actors_link (spoiler)</summary>
 
 ```sql
 
@@ -35,7 +35,7 @@ ALTER TABLE actors RENAME id_actor TO actor_id;
 ALTER TABLE films RENAME id_film TO film_id;
 
 INSERT INTO films_actors_link 
-SELECT 1 as film_id, actor_id FROM actors WHERE 
+SELECT 1 AS film_id, actor_id FROM actors WHERE 
 (first_name || ' ' || second_name) ~ 'Роза Салазар' OR
 (first_name || ' ' || second_name) ~ 'Кристоф Вальц' OR
 (first_name || ' ' || second_name) ~ 'Дженнифер Коннелли' OR
@@ -45,7 +45,7 @@ SELECT 1 as film_id, actor_id FROM actors WHERE
 (first_name || ' ' || second_name) ~ 'Киан Джонсон';
 
 INSERT INTO films_actors_link 
-SELECT 2 as film_id, actor_id FROM actors WHERE 
+SELECT 2 AS film_id, actor_id FROM actors WHERE 
 (first_name || ' ' || second_name) ~ 'Сэм Уортингтон' OR
 (first_name || ' ' || second_name) ~ 'Зои Салдана' OR
 (first_name || ' ' || second_name) ~ 'Сигурни Уивер' OR
@@ -55,7 +55,7 @@ SELECT 2 as film_id, actor_id FROM actors WHERE
 (first_name || ' ' || second_name) ~ 'Джоэль Мур';
 
 INSERT INTO films_actors_link 
-SELECT 3 as film_id, actor_id FROM actors WHERE 
+SELECT 3 AS film_id, actor_id FROM actors WHERE 
 (first_name || ' ' || second_name) ~ 'Джеймс Бэдж Дэйл' OR
 (first_name || ' ' || second_name) ~ 'Джон Красински' OR
 (first_name || ' ' || second_name) ~ 'Тоби Стивенс' OR
@@ -63,14 +63,14 @@ SELECT 3 as film_id, actor_id FROM actors WHERE
 (first_name || ' ' || second_name) ~ 'Фредди Строма';
 
 INSERT INTO films_actors_link 
-SELECT 4 as film_id, actor_id FROM actors WHERE
+SELECT 4 AS film_id, actor_id FROM actors WHERE
 (first_name || ' ' || second_name) ~ 'Джесси Айзенберг' OR
 (first_name || ' ' || second_name) ~ 'Вуди Харрельсон' OR
 (first_name || ' ' || second_name) ~ 'Эмма Стоун' OR
 (first_name || ' ' || second_name) ~ 'Эбигейл Бреслин';
 
 INSERT INTO films_actors_link 
-SELECT 5 as film_id, actor_id FROM actors WHERE
+SELECT 5 AS film_id, actor_id FROM actors WHERE
 (first_name || ' ' || second_name) ~ 'Киану Ривз' OR
 (first_name || ' ' || second_name) ~ 'Лоуренс Фишборн' OR
 (first_name || ' ' || second_name) ~ 'Керри-Энн Мосс' OR
@@ -156,7 +156,7 @@ ALTER TABLE films_actors_link RENAME TO films_actors_links;
 
 
 <details>
-	<summary>создание таблицы отношений films_producer_link</summary>
+	<summary>создание таблицы отношений films_producer_link (spoiler)</summary>
 
 ```sql
 
@@ -182,7 +182,7 @@ INSERT INTO films_producers_links(film_id, producer_id) VALUES
 </details>
 
 <details>
-	<summary>SELECTS</summary>
+	<summary>SELECTS (spoiler)</summary>
 
 ```sql
 
@@ -262,10 +262,62 @@ ORDER BY fi.title_ru, actors;
 ```
 </details>
 
-Так и не понял как красиво убрать повторения
+Так и не понял как красиво убрать повторения чтобы было как-то так 
 
-### 3.
+<details>
+	<summary>dreams (spoiler)</summary>
 
-> Продолжаем работу с домашней базой данных, практикуем разницу между видами джоинов, дополняем базу данных новыми сущностями на свой вкус и цвет. Инфу о дополненном и найденом пишем в файле `README.md` в репозитории с этой базой данных. 
+```sql
 
-### Результаты наработок, как обычно, дампом заливаем на github или gitlab так, чтобы я легко нашел их по номеру урока.
+             title_ru             |    producer     |       actors       
+----------------------------------+-----------------+--------------------
+ 13 часов: Тайные солдаты Бенгази | Майкл Бэй       | Джеймс Бэдж Дэйл
+                                  |                 | Джон Красински
+                                  |                 | Пабло Шрайбер
+                                  |                 | Тоби Стивенс
+                                  |                 | Фредди Строма
+ Аватар                           | Джеймс Кэмерон  | Джованни Рибизи
+                                  |                 | Джоэль Мур
+                                  |                 | Зои Салдана
+                                  |                 | Мишель Родригес
+                                  |                 | Сигурни Уивер
+                                  |                 | Стивен Лэнг
+                                  |                 | Сэм Уортингтон
+ Алита: Боевой ангел              | Роберт Родригес | Джеки Эрл Хейли
+                                  |                 | Дженнифер Коннелли
+                                  |                 | Киан Джонсон
+                                  |                 | Кристоф Вальц
+                                  |                 | Махершала Али
+                                  |                 | Роза Салазар
+                                  |                 | Эд Скрейн
+ Добро пожаловать в Zомбилэнд     | Рубен Флейшер   | Вуди Харрельсон
+                                  |                 | Джесси Айзенберг
+                                  |                 | Эбигейл Бреслин
+                                  |                 | Эмма Стоун
+ Матрица                          | Братья Вачовски | Джо Пантолиано
+                                  |                 | Керри-Энн Мосс
+                                  |                 | Киану Ривз
+                                  |                 | Лоуренс Фишборн
+                                  |                 | Хьюго Уивинг
+(28 rows)
+
+```
+</details>
+
+уже перестал пинать эту мертвую лошедь
+
+### 3.a Продолжаем работу с домашней базой данных, практикуем разницу между видами джоинов.
+
+inner join на пересекающихся актеров 
+
+inner join на пересекающихся режиссеров 
+
+### 3.b дополняем базу данных новыми сущностями на свой вкус и цвет.
+
+добавить компанию разработчика
+ 
+### 3.c Инфу о дополненном и найденом пишем в файле `README.md` в репозитории с этой базой данных. 
+
+выложить на githab
+
+> Результаты наработок, как обычно, дампом заливаем на github или gitlab так, чтобы я легко нашел их по номеру урока.
