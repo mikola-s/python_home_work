@@ -7,3 +7,6 @@
 [submodule "lesson_10/lesson_10_lvl_02_bootstraped_form"]
 	path = lesson_10/lesson_10_lvl_02_bootstraped_form
 	url = git@github.com:mikola-s/lesson_10_lvl_02_bootstraped_form.git
+[submodule "lesson_21_JS_home_work"]
+	path = lesson_21_JS_home_work
+	url = git@github.com:mikola-s/lesson_21_JS_home_work.git
