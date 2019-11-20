@@ -10,3 +10,6 @@
 [submodule "lesson_21_JS_home_work"]
 	path = lesson_21_JS_home_work
 	url = git@github.com:mikola-s/lesson_21_JS_home_work.git
+[submodule "lesson_23_DOM"]
+	path = lesson_23_DOM
+	url = git@github.com:mikola-s/lesson_23_DOM.git
