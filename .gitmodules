@@ -13,3 +13,6 @@
 [submodule "lesson_23_DOM"]
 	path = lesson_23_DOM
 	url = git@github.com:mikola-s/lesson_23_DOM.git
+[submodule "lesson_25_OOP_01"]
+	path = lesson_25_OOP_01
+	url = git@github.com:mikola-s/lesson_25_OOP_01.git
