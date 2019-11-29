@@ -19,3 +19,6 @@
 [submodule "lesson_26_OOP_02"]
 	path = lesson_26_OOP_02
 	url = git@github.com:mikola-s/lesson_26_OOP_02.git
+[submodule "lesson_28_OOP_practics"]
+	path = lesson_28_OOP_practics
+	url = git@github.com:mikola-s/lesson_28_OOP_practics.git
