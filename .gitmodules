@@ -25,3 +25,9 @@
 [submodule "lesson_29_OOP_5_itegral_decorator"]
 	path = lesson_29_OOP_05_itegral_decorator
 	url = git@github.com:mikola-s/lesson_29_OOP_05_itegral_decorator.git
+[submodule "lesson_29_OOP_05_inner_decorator"]
+	path = lesson_29_OOP_05_inner_decorator
+	url = git@github.com:mikola-s/lesson_29_OOP_05_inner_decorator.git
+[submodule "lesson_30_OOP_06_practics"]
+	path = lesson_30_OOP_06_practics
+	url = https://github.com/mikola-s/lesson_30_OOP_06_practics
