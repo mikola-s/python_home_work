@@ -31,3 +31,6 @@
 [submodule "lesson_30_OOP_06_practics"]
 	path = lesson_30_OOP_06_practics
 	url = https://github.com/mikola-s/lesson_30_OOP_06_practics
+[submodule "lesson_33_dj_01_urls"]
+	path = lesson_33_dj_01_urls
+	url = git@github.com:mikola-s/lesson_33_dj_01_urls.git
