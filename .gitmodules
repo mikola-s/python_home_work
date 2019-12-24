@@ -34,3 +34,9 @@
 [submodule "lesson_33_dj_01_urls"]
 	path = lesson_33_dj_01_urls
 	url = git@github.com:mikola-s/lesson_33_dj_01_urls.git
+[submodule "lesson_34_dj_02_templates"]
+	path = lesson_34_dj_02_templates
+	url = git@github.com:mikola-s/lesson_34_dj_02_templates.git
+[submodule "lesson_35_dj_03_youtube"]
+	path = lesson_35_dj_03_youtube
+	url = git@github.com:mikola-s/lesson_35_dj_03_youtube.git
