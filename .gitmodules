@@ -40,3 +40,6 @@
 [submodule "lesson_35_dj_03_youtube"]
 	path = lesson_35_dj_03_youtube
 	url = git@github.com:mikola-s/lesson_35_dj_03_youtube.git
+[submodule "django_blog"]
+	path = lesson_36_dj_04_query_set
+	url = git@github.com:mikola-s/django_blog.git
